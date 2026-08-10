@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>สรุปงบ 2Q2026 (SET + mai) — รายงานกำไรไตรมาส</title>
+<style>
+  :root { --pos: #27ae60; --neg: #c0392b; --accent: #2c3e50; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system,'Segoe UI','Noto Sans Thai',Tahoma,sans-serif; margin: 0; background: #f4f6f9; color: #1c1e21; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: #7f8c8d; font-size: 13px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+  .card { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .card .k { font-size: 12px; color: #7f8c8d; }
+  .card .v { font-size: 20px; font-weight: 700; margin-top: 4px; }
+  .card .v.small { font-size: 15px; }
+  .pos { color: var(--pos); } .neg { color: var(--neg); } .zero { color: #7f8c8d; } .na { color: #bdc3c7; }
+  .tabs { display: flex; gap: 8px; margin: 20px 0 12px; }
+  .tab { padding: 8px 16px; border-radius: 8px; background: #e8ecf1; cursor: pointer; font-size: 14px; font-weight: 600; }
+  .tab.active { background: var(--accent); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08); font-size: 13px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #ecf0f1; text-align: left; white-space: nowrap; }
+  th { background: var(--accent); color: #fff; font-size: 12px; position: sticky; top: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr:hover td { background: #f8fafc; }
+  .scroll { overflow-x: auto; border-radius: 10px; max-height: 70vh; overflow-y: auto; }
+  .toolbar { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .toolbar select { padding: 6px 10px; border-radius: 8px; border: 1px solid #d0d5dd; font-size: 13px; background: #fff; }
+  .note { background: #fff8e6; border: 1px solid #f0d488; border-radius: 8px; padding: 12px; font-size: 13px; color: #7a5c00; margin-top: 16px; }
+  .new-banner { background: #e8f8f0; border: 1px solid #a3e4c8; border-radius: 10px; padding: 12px 16px; margin: 14px 0; }
+  .nb-title { font-weight: 700; font-size: 14px; color: #1e7a46; margin-bottom: 8px; }
+  .nb-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: #fff; border: 1px solid #a3e4c8; border-radius: 20px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
+  .chip .sub { font-size: 10px; }
+  .total-row td { background: #f0f4f8 !important; border-top: 2px solid var(--accent); font-weight: 600; }
+  .new-badge { display: inline-block; background: #27ae60; color: #fff; font-size: 10px; font-weight: 700; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
+  .new-col { text-align: center; width: 44px; min-width: 44px; }
+  .foot { color: #95a5a6; font-size: 12px; margin: 20px 0; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📊 สรุปงบไตรมาส 2/2026 (Q2/2026)</h1>
+  <div class="sub">SET + mai · ข้อมูล ณ 2026-08-07 · กำไรสุทธิ (Net Profit) หน่วยล้านบาท · แหล่งข้อมูล: SETSMART stockComparisonFinancial (Financial Data & Key Ratios)</div>
+
+  <div class="new-banner">
+  <div class="nb-title">🆕 งบใหม่ที่รายงานเพิ่มวันนี้ (30 ราย)</div>
+  <div class="nb-chips"><span class="chip" title="กำไร 142.3 ลบ. · ประกาศงบ 2026-08-07">🆕 ASIAN <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 80.4 ลบ. · ประกาศงบ 2026-08-07">🆕 LST <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 99.3 ลบ. · ประกาศงบ 2026-08-07">🆕 TC <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร -49.3 ลบ. · ประกาศงบ 2026-08-07">🆕 KYE <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร -51.8 ลบ. · ประกาศงบ 2026-08-07">🆕 DDD <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 28.2 ลบ. · ประกาศงบ 2026-08-07">🆕 HENG <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 1,244.5 ลบ. · ประกาศงบ 2026-08-07">🆕 BKIH <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 83.7 ลบ. · ประกาศงบ 2026-08-07">🆕 CMAN <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 12,208.4 ลบ. · ประกาศงบ 2026-08-07">🆕 PTTGC <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 2.0 ลบ. · ประกาศงบ 2026-08-07">🆕 TPA <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 227.4 ลบ. · ประกาศงบ 2026-08-07">🆕 2S <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร - ลบ. · ประกาศงบ 2026-08-07">🆕 WHABT <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร - ลบ. · ประกาศงบ 2026-08-07">🆕 WHART <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร -31.6 ลบ. · ประกาศงบ 2026-08-07">🆕 APCS <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 12,239.4 ลบ. · ประกาศงบ 2026-08-07">🆕 BCP <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 1,874.4 ลบ. · ประกาศงบ 2026-08-07">🆕 CPAXT <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 140.9 ลบ. · ประกาศงบ 2026-08-07">🆕 ICC <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 757.0 ลบ. · ประกาศงบ 2026-08-07">🆕 MRDIYT <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 38.1 ลบ. · ประกาศงบ 2026-08-07">🆕 KDH <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 47.0 ลบ. · ประกาศงบ 2026-08-07">🆕 PRTR <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 1,980.9 ลบ. · ประกาศงบ 2026-08-07">🆕 RCL <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 267.6 ลบ. · ประกาศงบ 2026-08-07">🆕 SIS <span class="sub">SET · 08-07</span></span><span class="chip" title="กำไร 36.9 ลบ. · ประกาศงบ 2026-08-07">🆕 MGT <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร 4.4 ลบ. · ประกาศงบ 2026-08-07">🆕 SMART <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร -8.2 ลบ. · ประกาศงบ 2026-08-07">🆕 TIGER <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร 2.0 ลบ. · ประกาศงบ 2026-08-07">🆕 YONG <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร 9.9 ลบ. · ประกาศงบ 2026-08-07">🆕 AUCT <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร 14.2 ลบ. · ประกาศงบ 2026-08-07">🆕 MORE <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร -5.4 ลบ. · ประกาศงบ 2026-08-07">🆕 COMAN <span class="sub">mai · 08-07</span></span><span class="chip" title="กำไร 4.0 ลบ. · ประกาศงบ 2026-08-07">🆕 READY <span class="sub">mai · 08-07</span></span></div>
+</div>
+
+  <div class="cards">
+    <div class="card"><div class="k">หุ้นรายงานงบแล้ว</div><div class="v">108 <span class="sub">ตัว</span></div><div class="sub">SET 87 · mai 21</div></div>
+    <div class="card"><div class="k">กำไรรวม 2Q26 (ลบ.)</div><div class="v">113,117.8</div><div class="sub">SET 112,471.5 · mai 646.3</div></div>
+    <div class="card"><div class="k">รายได้รวม 2Q26 (ลบ.)</div><div class="v small">1,305,109.3</div><div class="sub">SET 1,296,771.7 · mai 8,337.6</div></div>
+    <div class="card"><div class="k">กำไร QoQ (เทียบ 1Q26)</div><div class="v pos">+31.6%</div><div class="sub">SET +31.5% · mai +56.3%</div></div>
+    <div class="card"><div class="k">กำไร YoY (เทียบ 2Q25)</div><div class="v pos">+2.9%</div><div class="sub">SET +2.7% · mai +146.3%</div></div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('t1')">📋 รายละเอียดรายหุ้น</div>
+    <div class="tab" onclick="showTab('t2')">🏭 สรุปแยก Sector</div>
+  </div>
+
+  <div id="t1" class="panel active">
+    <div class="toolbar">
+      <span class="sub">เรียงลำดับ:</span>
+      <select id="sortSel" onchange="sortTable(this.value)">
+        <option value="np">กำไร 2Q26 (มาก→น้อย)</option>
+        <option value="sym">ตัวอักษร A-Z</option>
+        <option value="mcap">Market Cap (มาก→น้อย)</option>
+        <option value="eps">EPS (มาก→น้อย)</option>
+        <option value="qoq">% QoQ (มาก→น้อย)</option>
+        <option value="yoy">% YoY (มาก→น้อย)</option>
+        <option value="new">🆕 New ก่อน (แล้ว A-Z)</option>
+      </select>
+    </div>
+    <div class="scroll">
+    <table id="mainTable">
+      <thead><tr>
+        <th>หุ้น</th><th class="new-col">New</th><th>Sector</th><th class="num">Mkt Cap</th><th class="num">EPS</th>
+        <th class="num">กำไร 2Q26</th><th class="num">กำไร 1Q26</th><th class="num">กำไร 2Q25</th>
+        <th class="num">QoQ</th><th class="num">YoY</th><th class="num">รายได้ 2Q26</th>
+        <th class="num">-1D</th><th class="num">-1W</th><th class="num">-2W</th><th class="num">-1M</th><th class="num">YTD</th>
+        <th>ราคา 10 วันทำการ</th>
+      </tr></thead>
+      <tbody><tr data-sym="PTTEP" data-market="SET" data-new="0" data-np="27197171.0" data-mcap="591527824600.0" data-eps="6.85" data-qoq="129.8" data-yoy="101.2">
+<td><b>PTTEP</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">591.5B</td>
+<td class="num">6.85</td>
+<td class="num">27,197.2</td>
+<td class="num">11,835.3</td>
+<td class="num">13,515.3</td>
+<td class="num pos">+129.8%</td>
+<td class="num pos">+101.2%</td>
+<td class="num">98,644.3</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.3%</td>
+<td class="num pos">+11.6%</td>
+<td class="num pos">+33.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="10.0" width="7.0" height="14.0" fill="#c0392b"/><rect x="20.0" y="10.0" width="7.0" height="14.0" fill="#27ae60"/><rect x="30.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="ADVANC" data-market="SET" data-new="0" data-np="13716006.0" data-mcap="1112354441264.0" data-eps="4.61" data-qoq="1.6" data-yoy="24.9">
+<td><b>ADVANC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">1,112.4B</td>
+<td class="num">4.61</td>
+<td class="num">13,716.0</td>
+<td class="num">13,495.5</td>
+<td class="num">10,981.9</td>
+<td class="num pos">+1.6%</td>
+<td class="num pos">+24.9%</td>
+<td class="num">56,614.2</td>
+<td class="num neg">-0.3%</td>
+<td class="num neg">-1.6%</td>
+<td class="num neg">-0.8%</td>
+<td class="num neg">-0.5%</td>
+<td class="num pos">+16.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="13.1" width="7.0" height="10.9" fill="#95a5a6"/><rect x="10.0" y="11.3" width="7.0" height="12.7" fill="#27ae60"/><rect x="20.0" y="16.7" width="7.0" height="7.3" fill="#c0392b"/><rect x="30.0" y="7.6" width="7.0" height="16.4" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="14.9" width="7.0" height="9.1" fill="#c0392b"/><rect x="60.0" y="14.9" width="7.0" height="9.1" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="13.1" width="7.0" height="10.9" fill="#27ae60"/><rect x="90.0" y="14.9" width="7.0" height="9.1" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="GULF" data-market="SET" data-new="0" data-np="12445684.0" data-mcap="997234165340.25" data-eps="0.83" data-qoq="36.5" data-yoy="-80.5">
+<td><b>GULF</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">997.2B</td>
+<td class="num">0.83</td>
+<td class="num">12,445.7</td>
+<td class="num">9,116.8</td>
+<td class="num">63,871.5</td>
+<td class="num pos">+36.5%</td>
+<td class="num neg">-80.5%</td>
+<td class="num">50,294.5</td>
+<td class="num neg">-1.1%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.4%</td>
+<td class="num pos">+6.8%</td>
+<td class="num pos">+60.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.3" width="7.0" height="6.7" fill="#95a5a6"/><rect x="10.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="19.6" width="7.0" height="4.4" fill="#27ae60"/><rect x="40.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="50.0" y="8.4" width="7.0" height="15.6" fill="#27ae60"/><rect x="60.0" y="12.9" width="7.0" height="11.1" fill="#c0392b"/><rect x="70.0" y="12.9" width="7.0" height="11.1" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="BCP" data-market="SET" data-new="1" data-np="12239355.0" data-mcap="67005149438.5" data-eps="8.34" data-qoq="99.2" data-yoy="-578.1">
+<td><b>BCP</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>ENERG</td>
+<td class="num">67.0B</td>
+<td class="num">8.34</td>
+<td class="num">12,239.4</td>
+<td class="num">6,143.8</td>
+<td class="num">-2,560.1</td>
+<td class="num pos">+99.2%</td>
+<td class="num neg">-578.1%</td>
+<td class="num">184,952.6</td>
+<td class="num pos">+2.2%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+29.1%</td>
+<td class="num pos">+73.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="12.0" width="7.0" height="12.0" fill="#95a5a6"/><rect x="10.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="40.0" y="16.0" width="7.0" height="8.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="20.0" width="7.0" height="4.0" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="PTTGC" data-market="SET" data-new="1" data-np="12208350.22" data-mcap="167954629608.25" data-eps="2.5" data-qoq="277.8" data-yoy="-437.6">
+<td><b>PTTGC</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PETRO</td>
+<td class="num">168.0B</td>
+<td class="num">2.50</td>
+<td class="num">12,208.4</td>
+<td class="num">3,231.8</td>
+<td class="num">-3,616.1</td>
+<td class="num pos">+277.8%</td>
+<td class="num neg">-437.6%</td>
+<td class="num">174,809.0</td>
+<td class="num pos">+1.4%</td>
+<td class="num pos">+1.4%</td>
+<td class="num neg">-8.0%</td>
+<td class="num pos">+8.8%</td>
+<td class="num pos">+76.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="7.8" width="7.0" height="16.2" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="20.2" width="7.0" height="3.8" fill="#27ae60"/><rect x="70.0" y="21.5" width="7.0" height="2.5" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="20.2" width="7.0" height="3.8" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TRUE" data-market="SET" data-new="0" data-np="6554129.0" data-mcap="462998150733.4" data-eps="0.19" data-qoq="-0.5" data-yoy="222.7">
+<td><b>TRUE</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">463.0B</td>
+<td class="num">0.19</td>
+<td class="num">6,554.1</td>
+<td class="num">6,588.7</td>
+<td class="num">2,031.2</td>
+<td class="num neg">-0.5%</td>
+<td class="num pos">+222.7%</td>
+<td class="num">46,238.0</td>
+<td class="num neg">-0.7%</td>
+<td class="num neg">-6.9%</td>
+<td class="num neg">-5.6%</td>
+<td class="num pos">+3.1%</td>
+<td class="num pos">+18.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.8" width="7.0" height="9.2" fill="#95a5a6"/><rect x="10.0" y="13.2" width="7.0" height="10.8" fill="#27ae60"/><rect x="20.0" y="14.8" width="7.0" height="9.2" fill="#c0392b"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="7.1" width="7.0" height="16.9" fill="#c0392b"/><rect x="50.0" y="14.8" width="7.0" height="9.2" fill="#c0392b"/><rect x="60.0" y="16.3" width="7.0" height="7.7" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="20.9" width="7.0" height="3.1" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="DELTA" data-market="SET" data-new="0" data-np="6074598.0" data-mcap="3268139828680.0" data-eps="0.49" data-qoq="-33.1" data-yoy="31.2">
+<td><b>DELTA</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ETRON</td>
+<td class="num">3,268.1B</td>
+<td class="num">0.49</td>
+<td class="num">6,074.6</td>
+<td class="num">9,081.2</td>
+<td class="num">4,629.1</td>
+<td class="num neg">-33.1%</td>
+<td class="num pos">+31.2%</td>
+<td class="num">66,032.6</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-5.8%</td>
+<td class="num neg">-13.8%</td>
+<td class="num neg">-15.8%</td>
+<td class="num pos">+41.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="5.2" width="7.0" height="18.8" fill="#c0392b"/><rect x="20.0" y="14.4" width="7.0" height="9.6" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="50.0" y="19.8" width="7.0" height="4.2" fill="#c0392b"/><rect x="60.0" y="21.9" width="7.0" height="2.1" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SCGP" data-market="SET" data-new="0" data-np="2303796.0" data-mcap="133080526200.0" data-eps="0.54" data-qoq="47.1" data-yoy="128.1">
+<td><b>SCGP</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PKG</td>
+<td class="num">133.1B</td>
+<td class="num">0.54</td>
+<td class="num">2,303.8</td>
+<td class="num">1,566.2</td>
+<td class="num">1,009.8</td>
+<td class="num pos">+47.1%</td>
+<td class="num pos">+128.1%</td>
+<td class="num">32,640.6</td>
+<td class="num neg">-2.4%</td>
+<td class="num pos">+1.6%</td>
+<td class="num pos">+2.5%</td>
+<td class="num pos">+6.0%</td>
+<td class="num pos">+84.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.6" width="7.0" height="4.4" fill="#95a5a6"/><rect x="10.0" y="21.8" width="7.0" height="2.2" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="19.6" width="7.0" height="4.4" fill="#27ae60"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="12.9" width="7.0" height="11.1" fill="#c0392b"/><rect x="80.0" y="6.2" width="7.0" height="17.8" fill="#27ae60"/><rect x="90.0" y="12.9" width="7.0" height="11.1" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="RCL" data-market="SET" data-new="1" data-np="1980872.0" data-mcap="28384687500.0" data-eps="2.39" data-qoq="18.5" data-yoy="-1.2">
+<td><b>RCL</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>TRANS</td>
+<td class="num">28.4B</td>
+<td class="num">2.39</td>
+<td class="num">1,980.9</td>
+<td class="num">1,671.1</td>
+<td class="num">2,004.9</td>
+<td class="num pos">+18.5%</td>
+<td class="num neg">-1.2%</td>
+<td class="num">10,271.8</td>
+<td class="num neg">-0.7%</td>
+<td class="num neg">-2.1%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+7.0%</td>
+<td class="num pos">+22.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="40.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="50.0" y="7.3" width="7.0" height="16.7" fill="#27ae60"/><rect x="60.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="90.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="CPAXT" data-market="SET" data-new="1" data-np="1874367.0" data-mcap="156414927000.0" data-eps="0.18" data-qoq="-32.9" data-yoy="-18.0">
+<td><b>CPAXT</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>COMM</td>
+<td class="num">156.4B</td>
+<td class="num">0.18</td>
+<td class="num">1,874.4</td>
+<td class="num">2,793.7</td>
+<td class="num">2,286.3</td>
+<td class="num neg">-32.9%</td>
+<td class="num neg">-18.0%</td>
+<td class="num">132,283.9</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.7%</td>
+<td class="num pos">+1.4%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-3.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="90.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="GPSC" data-market="SET" data-new="0" data-np="1819104.1" data-mcap="140281536008.25" data-eps="0.65" data-qoq="5.8" data-yoy="-9.9">
+<td><b>GPSC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">140.3B</td>
+<td class="num">0.65</td>
+<td class="num">1,819.1</td>
+<td class="num">1,719.3</td>
+<td class="num">2,019.3</td>
+<td class="num pos">+5.8%</td>
+<td class="num neg">-9.9%</td>
+<td class="num">22,073.7</td>
+<td class="num neg">-2.9%</td>
+<td class="num neg">-3.9%</td>
+<td class="num neg">-8.7%</td>
+<td class="num pos">+3.6%</td>
+<td class="num pos">+39.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="7.2" width="7.0" height="16.8" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="6.1" width="7.0" height="17.9" fill="#c0392b"/><rect x="30.0" y="13.5" width="7.0" height="10.5" fill="#c0392b"/><rect x="40.0" y="15.6" width="7.0" height="8.4" fill="#c0392b"/><rect x="50.0" y="14.5" width="7.0" height="9.5" fill="#27ae60"/><rect x="60.0" y="13.5" width="7.0" height="10.5" fill="#27ae60"/><rect x="70.0" y="15.6" width="7.0" height="8.4" fill="#c0392b"/><rect x="80.0" y="17.7" width="7.0" height="6.3" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="HMPRO" data-market="SET" data-new="0" data-np="1594181.0" data-mcap="87455466866.25" data-eps="0.12" data-qoq="13.5" data-yoy="14.0">
+<td><b>HMPRO</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>COMM</td>
+<td class="num">87.5B</td>
+<td class="num">0.12</td>
+<td class="num">1,594.2</td>
+<td class="num">1,404.0</td>
+<td class="num">1,398.6</td>
+<td class="num pos">+13.5%</td>
+<td class="num pos">+14.0%</td>
+<td class="num">18,059.2</td>
+<td class="num neg">-0.8%</td>
+<td class="num pos">+2.3%</td>
+<td class="num pos">+1.5%</td>
+<td class="num pos">+1.5%</td>
+<td class="num pos">+0.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="21.5" width="7.0" height="2.5" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="16.5" width="7.0" height="7.5" fill="#27ae60"/><rect x="30.0" y="21.5" width="7.0" height="2.5" fill="#c0392b"/><rect x="40.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="70.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="80.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="90.0" y="11.5" width="7.0" height="12.5" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="TU" data-market="SET" data-new="0" data-np="1264053.0" data-mcap="56593264856.8" data-eps="0.33" data-qoq="13.5" data-yoy="-0.7">
+<td><b>TU</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FOOD</td>
+<td class="num">56.6B</td>
+<td class="num">0.33</td>
+<td class="num">1,264.1</td>
+<td class="num">1,113.3</td>
+<td class="num">1,272.6</td>
+<td class="num pos">+13.5%</td>
+<td class="num neg">-0.7%</td>
+<td class="num">34,076.9</td>
+<td class="num pos">+0.8%</td>
+<td class="num pos">+9.0%</td>
+<td class="num pos">+11.8%</td>
+<td class="num pos">+10.8%</td>
+<td class="num pos">+3.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="20.4" width="7.0" height="3.6" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="50.0" y="13.1" width="7.0" height="10.9" fill="#27ae60"/><rect x="60.0" y="5.8" width="7.0" height="18.2" fill="#27ae60"/><rect x="70.0" y="5.8" width="7.0" height="18.2" fill="#27ae60"/><rect x="80.0" y="5.8" width="7.0" height="18.2" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SCCC" data-market="SET" data-new="0" data-np="1252904.0" data-mcap="45892000000.0" data-eps="4.2" data-qoq="-9.1" data-yoy="30.6">
+<td><b>SCCC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>CONMAT</td>
+<td class="num">45.9B</td>
+<td class="num">4.20</td>
+<td class="num">1,252.9</td>
+<td class="num">1,377.8</td>
+<td class="num">959.1</td>
+<td class="num neg">-9.1%</td>
+<td class="num pos">+30.6%</td>
+<td class="num">14,875.1</td>
+<td class="num neg">-0.3%</td>
+<td class="num pos">+3.4%</td>
+<td class="num pos">+3.4%</td>
+<td class="num pos">+5.1%</td>
+<td class="num pos">+7.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="60.0" y="20.4" width="7.0" height="3.6" fill="#27ae60"/><rect x="70.0" y="14.9" width="7.0" height="9.1" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="5.8" width="7.0" height="18.2" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="BKIH" data-market="SET" data-new="1" data-np="1244466.24" data-mcap="39016563000.0" data-eps="11.96" data-qoq="10.2" data-yoy="30.2">
+<td><b>BKIH</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>INSUR</td>
+<td class="num">39.0B</td>
+<td class="num">11.96</td>
+<td class="num">1,244.5</td>
+<td class="num">1,129.1</td>
+<td class="num">955.8</td>
+<td class="num pos">+10.2%</td>
+<td class="num pos">+30.2%</td>
+<td class="num">7,986.4</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.8%</td>
+<td class="num pos">+0.8%</td>
+<td class="num pos">+1.1%</td>
+<td class="num pos">+25.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="20.0" width="7.0" height="4.0" fill="#95a5a6"/><rect x="10.0" y="16.0" width="7.0" height="8.0" fill="#27ae60"/><rect x="20.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="16.0" width="7.0" height="8.0" fill="#27ae60"/><rect x="50.0" y="20.0" width="7.0" height="4.0" fill="#c0392b"/><rect x="60.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="GLOBAL" data-market="SET" data-new="0" data-np="955484.0" data-mcap="42855224134.95" data-eps="0.17" data-qoq="19.1" data-yoy="83.6">
+<td><b>GLOBAL</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>COMM</td>
+<td class="num">42.9B</td>
+<td class="num">0.17</td>
+<td class="num">955.5</td>
+<td class="num">802.6</td>
+<td class="num">520.4</td>
+<td class="num pos">+19.1%</td>
+<td class="num pos">+83.6%</td>
+<td class="num">8,360.9</td>
+<td class="num pos">+0.7%</td>
+<td class="num pos">+3.4%</td>
+<td class="num pos">+6.2%</td>
+<td class="num pos">+5.5%</td>
+<td class="num pos">+20.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="30.0" y="16.0" width="7.0" height="8.0" fill="#27ae60"/><rect x="40.0" y="16.0" width="7.0" height="8.0" fill="#27ae60"/><rect x="50.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="6.0" width="7.0" height="18.0" fill="#c0392b"/><rect x="80.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/><rect x="90.0" y="11.0" width="7.0" height="13.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="ITC" data-market="SET" data-new="0" data-np="844094.0" data-mcap="52800000000.0" data-eps="0.28" data-qoq="-3.1" data-yoy="21.3">
+<td><b>ITC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FOOD</td>
+<td class="num">52.8B</td>
+<td class="num">0.28</td>
+<td class="num">844.1</td>
+<td class="num">871.3</td>
+<td class="num">696.0</td>
+<td class="num neg">-3.1%</td>
+<td class="num pos">+21.3%</td>
+<td class="num">4,685.3</td>
+<td class="num pos">+0.6%</td>
+<td class="num pos">+0.6%</td>
+<td class="num pos">+8.0%</td>
+<td class="num pos">+6.0%</td>
+<td class="num pos">+12.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="18.0" width="7.0" height="6.0" fill="#95a5a6"/><rect x="10.0" y="18.0" width="7.0" height="6.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="18.0" width="7.0" height="6.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="90.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="AEONTS" data-market="SET" data-new="0" data-np="793010.0" data-mcap="26125000000.0" data-eps="3.2" data-qoq="-13.1" data-yoy="2.7">
+<td><b>AEONTS</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FIN</td>
+<td class="num">26.1B</td>
+<td class="num">3.20</td>
+<td class="num">793.0</td>
+<td class="num">912.5</td>
+<td class="num">771.8</td>
+<td class="num neg">-13.1%</td>
+<td class="num pos">+2.7%</td>
+<td class="num">4,552.5</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-0.5%</td>
+<td class="num neg">-1.4%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="30.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="70.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="80.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="90.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="MRDIYT" data-market="SET" data-new="1" data-np="757023.0" data-mcap="59268405450.0" data-eps="0.13" data-qoq="11.6" data-yoy="-1e+18">
+<td><b>MRDIYT</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>COMM</td>
+<td class="num">59.3B</td>
+<td class="num">0.13</td>
+<td class="num">757.0</td>
+<td class="num">678.3</td>
+<td class="num">-</td>
+<td class="num pos">+11.6%</td>
+<td class="num na">-</td>
+<td class="num">5,876.8</td>
+<td class="num neg">-0.5%</td>
+<td class="num neg">-1.5%</td>
+<td class="num pos">+0.5%</td>
+<td class="num neg">-3.4%</td>
+<td class="num pos">+13.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.3" width="7.0" height="6.7" fill="#95a5a6"/><rect x="10.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="70.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="80.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="ASW" data-market="SET" data-new="0" data-np="562919.9" data-mcap="7152969172.5" data-eps="0.63" data-qoq="145.2" data-yoy="183.6">
+<td><b>ASW</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">7.2B</td>
+<td class="num">0.63</td>
+<td class="num">562.9</td>
+<td class="num">229.6</td>
+<td class="num">198.5</td>
+<td class="num pos">+145.2%</td>
+<td class="num pos">+183.6%</td>
+<td class="num">3,529.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+6.7%</td>
+<td class="num pos">+6.7%</td>
+<td class="num pos">+11.2%</td>
+<td class="num pos">+32.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="20.7" width="7.0" height="3.3" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="PSL" data-market="SET" data-new="0" data-np="521494.0" data-mcap="14423449723.5" data-eps="0.35" data-qoq="382.0" data-yoy="-1304.0">
+<td><b>PSL</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>TRANS</td>
+<td class="num">14.4B</td>
+<td class="num">0.35</td>
+<td class="num">521.5</td>
+<td class="num">108.2</td>
+<td class="num">-43.3</td>
+<td class="num pos">+382.0%</td>
+<td class="num neg">-1304.0%</td>
+<td class="num">1,916.8</td>
+<td class="num pos">+8.2%</td>
+<td class="num pos">+14.9%</td>
+<td class="num pos">+10.8%</td>
+<td class="num pos">+21.7%</td>
+<td class="num pos">+50.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.8" width="7.0" height="6.2" fill="#95a5a6"/><rect x="10.0" y="19.4" width="7.0" height="4.6" fill="#c0392b"/><rect x="20.0" y="20.9" width="7.0" height="3.1" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="20.9" width="7.0" height="3.1" fill="#27ae60"/><rect x="60.0" y="14.8" width="7.0" height="9.2" fill="#27ae60"/><rect x="70.0" y="7.8" width="7.0" height="16.2" fill="#27ae60"/><rect x="80.0" y="14.8" width="7.0" height="9.2" fill="#c0392b"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="FPT" data-market="SET" data-new="0" data-np="496350.0" data-mcap="16234941933.0" data-eps="0.21" data-qoq="-60.9" data-yoy="-22.9">
+<td><b>FPT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">16.2B</td>
+<td class="num">0.21</td>
+<td class="num">496.4</td>
+<td class="num">1,269.6</td>
+<td class="num">644.2</td>
+<td class="num neg">-60.9%</td>
+<td class="num neg">-22.9%</td>
+<td class="num">3,014.7</td>
+<td class="num neg">-1.4%</td>
+<td class="num neg">-0.7%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+6.9%</td>
+<td class="num pos">+17.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.3" width="7.0" height="6.7" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="60.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="90.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="BBGI" data-market="SET" data-new="0" data-np="484845.0" data-mcap="8314500000.0" data-eps="0.34" data-qoq="83.2" data-yoy="-1317.6">
+<td><b>BBGI</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">8.3B</td>
+<td class="num">0.34</td>
+<td class="num">484.8</td>
+<td class="num">264.7</td>
+<td class="num">-39.8</td>
+<td class="num pos">+83.2%</td>
+<td class="num neg">-1317.6%</td>
+<td class="num">6,396.9</td>
+<td class="num pos">+4.5%</td>
+<td class="num pos">+13.9%</td>
+<td class="num pos">+9.5%</td>
+<td class="num pos">+35.0%</td>
+<td class="num pos">+103.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="15.8" width="7.0" height="8.2" fill="#95a5a6"/><rect x="10.0" y="20.5" width="7.0" height="3.5" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="20.5" width="7.0" height="3.5" fill="#27ae60"/><rect x="50.0" y="18.1" width="7.0" height="5.9" fill="#27ae60"/><rect x="60.0" y="19.3" width="7.0" height="4.7" fill="#c0392b"/><rect x="70.0" y="13.4" width="7.0" height="10.6" fill="#27ae60"/><rect x="80.0" y="9.9" width="7.0" height="14.1" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="NER" data-market="SET" data-new="0" data-np="436359.0" data-mcap="8499951185.0" data-eps="0.24" data-qoq="71.5" data-yoy="-21.2">
+<td><b>NER</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>AGRI</td>
+<td class="num">8.5B</td>
+<td class="num">0.24</td>
+<td class="num">436.4</td>
+<td class="num">254.4</td>
+<td class="num">554.0</td>
+<td class="num pos">+71.5%</td>
+<td class="num neg">-21.2%</td>
+<td class="num">7,170.0</td>
+<td class="num pos">+0.9%</td>
+<td class="num pos">+2.2%</td>
+<td class="num pos">+2.7%</td>
+<td class="num pos">+3.1%</td>
+<td class="num pos">+1.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.3" width="7.0" height="6.7" fill="#95a5a6"/><rect x="10.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="70.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TSTH" data-market="SET" data-new="0" data-np="409710.0" data-mcap="8337325439.52" data-eps="0.05" data-qoq="139.4" data-yoy="9.8">
+<td><b>TSTH</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>STEEL AN</td>
+<td class="num">8.3B</td>
+<td class="num">0.05</td>
+<td class="num">409.7</td>
+<td class="num">171.1</td>
+<td class="num">373.1</td>
+<td class="num pos">+139.4%</td>
+<td class="num pos">+9.8%</td>
+<td class="num">6,846.2</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-1.0%</td>
+<td class="num pos">+4.2%</td>
+<td class="num pos">+10.0%</td>
+<td class="num pos">+57.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.0" width="7.0" height="5.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="50.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="LANNA" data-market="SET" data-new="0" data-np="397899.0" data-mcap="7927495152.9" data-eps="0.76" data-qoq="125.6" data-yoy="125.4">
+<td><b>LANNA</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">7.9B</td>
+<td class="num">0.76</td>
+<td class="num">397.9</td>
+<td class="num">176.4</td>
+<td class="num">176.6</td>
+<td class="num pos">+125.6%</td>
+<td class="num pos">+125.4%</td>
+<td class="num">4,477.2</td>
+<td class="num pos">+0.7%</td>
+<td class="num pos">+2.7%</td>
+<td class="num pos">+4.1%</td>
+<td class="num pos">+4.1%</td>
+<td class="num neg">-0.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="50.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="60.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="70.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="80.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="STANLY" data-market="SET" data-new="0" data-np="361650.6" data-mcap="17853625000.0" data-eps="4.72" data-qoq="-19.3" data-yoy="-2.2">
+<td><b>STANLY</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>AUTO</td>
+<td class="num">17.9B</td>
+<td class="num">4.72</td>
+<td class="num">361.7</td>
+<td class="num">448.2</td>
+<td class="num">369.6</td>
+<td class="num neg">-19.3%</td>
+<td class="num neg">-2.2%</td>
+<td class="num">2,668.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-1.3%</td>
+<td class="num neg">-2.1%</td>
+<td class="num neg">-8.6%</td>
+<td class="num pos">+23.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="8.0" width="7.0" height="16.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="8.0" width="7.0" height="16.0" fill="#c0392b"/><rect x="30.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="40.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="50.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="60.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="70.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="GGC" data-market="SET" data-new="0" data-np="351163.0" data-mcap="4360820142.0" data-eps="0.34" data-qoq="264.1" data-yoy="-308.6">
+<td><b>GGC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PETRO</td>
+<td class="num">4.4B</td>
+<td class="num">0.34</td>
+<td class="num">351.2</td>
+<td class="num">96.4</td>
+<td class="num">-168.3</td>
+<td class="num pos">+264.1%</td>
+<td class="num neg">-308.6%</td>
+<td class="num">5,585.6</td>
+<td class="num pos">+0.5%</td>
+<td class="num pos">+6.0%</td>
+<td class="num neg">-2.3%</td>
+<td class="num pos">+13.3%</td>
+<td class="num pos">+24.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="21.3" width="7.0" height="2.7" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="18.7" width="7.0" height="5.3" fill="#27ae60"/><rect x="70.0" y="9.3" width="7.0" height="14.7" fill="#27ae60"/><rect x="80.0" y="6.7" width="7.0" height="17.3" fill="#27ae60"/><rect x="90.0" y="5.3" width="7.0" height="18.7" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SIS" data-market="SET" data-new="1" data-np="267554.0" data-mcap="9192714693.75" data-eps="0.76" data-qoq="3.7" data-yoy="40.0">
+<td><b>SIS</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>ICT</td>
+<td class="num">9.2B</td>
+<td class="num">0.76</td>
+<td class="num">267.6</td>
+<td class="num">258.0</td>
+<td class="num">191.1</td>
+<td class="num pos">+3.7%</td>
+<td class="num pos">+40.0%</td>
+<td class="num">8,087.3</td>
+<td class="num pos">+1.9%</td>
+<td class="num neg">-3.7%</td>
+<td class="num pos">+2.9%</td>
+<td class="num pos">+13.6%</td>
+<td class="num pos">+25.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="20.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="11.5" width="7.0" height="12.5" fill="#c0392b"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="70.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="80.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TITLE" data-market="SET" data-new="0" data-np="250743.7" data-mcap="7194911676.4" data-eps="0.32" data-qoq="494.0" data-yoy="-1e+18">
+<td><b>TITLE</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">7.2B</td>
+<td class="num">0.32</td>
+<td class="num">250.7</td>
+<td class="num">42.2</td>
+<td class="num">-</td>
+<td class="num pos">+494.0%</td>
+<td class="num na">-</td>
+<td class="num">1,455.0</td>
+<td class="num neg">-3.2%</td>
+<td class="num pos">+4.0%</td>
+<td class="num neg">-2.6%</td>
+<td class="num pos">+8.2%</td>
+<td class="num pos">+67.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="5.8" width="7.0" height="18.2" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="18.5" width="7.0" height="5.5" fill="#27ae60"/><rect x="40.0" y="15.8" width="7.0" height="8.2" fill="#27ae60"/><rect x="50.0" y="15.8" width="7.0" height="8.2" fill="#27ae60"/><rect x="60.0" y="13.1" width="7.0" height="10.9" fill="#27ae60"/><rect x="70.0" y="7.6" width="7.0" height="16.4" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="9.5" width="7.0" height="14.5" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="2S" data-market="SET" data-new="1" data-np="227427.0" data-mcap="2122984382.44" data-eps="0.41" data-qoq="61.2" data-yoy="201.1">
+<td><b>2S</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>STEEL AN</td>
+<td class="num">2.1B</td>
+<td class="num">0.41</td>
+<td class="num">227.4</td>
+<td class="num">141.1</td>
+<td class="num">75.5</td>
+<td class="num pos">+61.2%</td>
+<td class="num pos">+201.1%</td>
+<td class="num">2,031.3</td>
+<td class="num pos">+21.4%</td>
+<td class="num pos">+20.6%</td>
+<td class="num pos">+22.9%</td>
+<td class="num pos">+25.3%</td>
+<td class="num pos">+65.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="21.3" width="7.0" height="2.7" fill="#27ae60"/><rect x="30.0" y="21.8" width="7.0" height="2.2" fill="#c0392b"/><rect x="40.0" y="21.8" width="7.0" height="2.2" fill="#27ae60"/><rect x="50.0" y="21.8" width="7.0" height="2.2" fill="#27ae60"/><rect x="60.0" y="21.8" width="7.0" height="2.2" fill="#27ae60"/><rect x="70.0" y="21.8" width="7.0" height="2.2" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SYNEX" data-market="SET" data-new="0" data-np="222698.0" data-mcap="8473612060.0" data-eps="0.26" data-qoq="0.6" data-yoy="17.1">
+<td><b>SYNEX</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">8.5B</td>
+<td class="num">0.26</td>
+<td class="num">222.7</td>
+<td class="num">221.4</td>
+<td class="num">190.2</td>
+<td class="num pos">+0.6%</td>
+<td class="num pos">+17.1%</td>
+<td class="num">11,834.6</td>
+<td class="num pos">+0.5%</td>
+<td class="num neg">-2.0%</td>
+<td class="num pos">+0.5%</td>
+<td class="num pos">+10.5%</td>
+<td class="num pos">+0.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.7" width="7.0" height="4.3" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="19.7" width="7.0" height="4.3" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="6.9" width="7.0" height="17.1" fill="#c0392b"/><rect x="60.0" y="9.7" width="7.0" height="14.3" fill="#c0392b"/><rect x="70.0" y="6.9" width="7.0" height="17.1" fill="#27ae60"/><rect x="80.0" y="11.1" width="7.0" height="12.9" fill="#c0392b"/><rect x="90.0" y="9.7" width="7.0" height="14.3" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="DCC" data-market="SET" data-new="0" data-np="220709.0" data-mcap="13505904673.68" data-eps="0.02" data-qoq="-9.4" data-yoy="-3.9">
+<td><b>DCC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>CONMAT</td>
+<td class="num">13.5B</td>
+<td class="num">0.02</td>
+<td class="num">220.7</td>
+<td class="num">243.7</td>
+<td class="num">229.6</td>
+<td class="num neg">-9.4%</td>
+<td class="num neg">-3.9%</td>
+<td class="num">1,495.5</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.4%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+2.8%</td>
+<td class="num pos">+21.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="NCAP" data-market="SET" data-new="0" data-np="196626.99" data-mcap="5319000000.0" data-eps="0.15" data-qoq="9.7" data-yoy="34.1">
+<td><b>NCAP</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FIN</td>
+<td class="num">5.3B</td>
+<td class="num">0.15</td>
+<td class="num">196.6</td>
+<td class="num">179.2</td>
+<td class="num">146.6</td>
+<td class="num pos">+9.7%</td>
+<td class="num pos">+34.1%</td>
+<td class="num">592.4</td>
+<td class="num pos">+0.5%</td>
+<td class="num pos">+3.1%</td>
+<td class="num pos">+27.1%</td>
+<td class="num pos">+31.3%</td>
+<td class="num pos">+32.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="20.2" width="7.0" height="3.8" fill="#27ae60"/><rect x="30.0" y="16.5" width="7.0" height="7.5" fill="#27ae60"/><rect x="40.0" y="8.9" width="7.0" height="15.1" fill="#27ae60"/><rect x="50.0" y="8.5" width="7.0" height="15.5" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="6.6" width="7.0" height="17.4" fill="#c0392b"/><rect x="80.0" y="7.0" width="7.0" height="17.0" fill="#c0392b"/><rect x="90.0" y="6.6" width="7.0" height="17.4" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="AAI" data-market="SET" data-new="0" data-np="178019.0" data-mcap="8797500000.0" data-eps="0.08" data-qoq="29.5" data-yoy="-8.6">
+<td><b>AAI</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FOOD</td>
+<td class="num">8.8B</td>
+<td class="num">0.08</td>
+<td class="num">178.0</td>
+<td class="num">137.5</td>
+<td class="num">194.7</td>
+<td class="num pos">+29.5%</td>
+<td class="num neg">-8.6%</td>
+<td class="num">1,632.9</td>
+<td class="num pos">+3.5%</td>
+<td class="num pos">+2.0%</td>
+<td class="num pos">+5.6%</td>
+<td class="num pos">+4.5%</td>
+<td class="num zero">+0.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="16.0" width="7.0" height="8.0" fill="#95a5a6"/><rect x="10.0" y="20.0" width="7.0" height="4.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="50.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="60.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="70.0" y="20.0" width="7.0" height="4.0" fill="#c0392b"/><rect x="80.0" y="18.0" width="7.0" height="6.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TKS" data-market="SET" data-new="0" data-np="168931.0" data-mcap="4143854777.85" data-eps="0.35" data-qoq="11.4" data-yoy="1310.8">
+<td><b>TKS</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>MEDIA</td>
+<td class="num">4.1B</td>
+<td class="num">0.35</td>
+<td class="num">168.9</td>
+<td class="num">151.6</td>
+<td class="num">12.0</td>
+<td class="num pos">+11.4%</td>
+<td class="num pos">+1310.8%</td>
+<td class="num">443.0</td>
+<td class="num pos">+6.5%</td>
+<td class="num pos">+11.6%</td>
+<td class="num pos">+10.1%</td>
+<td class="num pos">+11.6%</td>
+<td class="num pos">+28.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.8" width="7.0" height="4.2" fill="#95a5a6"/><rect x="10.0" y="20.8" width="7.0" height="3.2" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="21.9" width="7.0" height="2.1" fill="#27ae60"/><rect x="50.0" y="15.6" width="7.0" height="8.4" fill="#27ae60"/><rect x="60.0" y="14.5" width="7.0" height="9.5" fill="#27ae60"/><rect x="70.0" y="14.5" width="7.0" height="9.5" fill="#27ae60"/><rect x="80.0" y="14.5" width="7.0" height="9.5" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TFM" data-market="SET" data-new="0" data-np="160798.0" data-mcap="6550000000.0" data-eps="0.16" data-qoq="9.0" data-yoy="-17.0">
+<td><b>TFM</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>AGRI</td>
+<td class="num">6.5B</td>
+<td class="num">0.16</td>
+<td class="num">160.8</td>
+<td class="num">147.5</td>
+<td class="num">193.7</td>
+<td class="num pos">+9.0%</td>
+<td class="num neg">-17.0%</td>
+<td class="num">1,467.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+10.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="BCPG" data-market="SET" data-new="0" data-np="154649.0" data-mcap="21120103339.95" data-eps="0.05" data-qoq="-78.6" data-yoy="-123.8">
+<td><b>BCPG</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">21.1B</td>
+<td class="num">0.05</td>
+<td class="num">154.6</td>
+<td class="num">722.3</td>
+<td class="num">-651.0</td>
+<td class="num neg">-78.6%</td>
+<td class="num neg">-123.8%</td>
+<td class="num">850.4</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-0.7%</td>
+<td class="num neg">-6.0%</td>
+<td class="num neg">-2.1%</td>
+<td class="num pos">+5.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="6.9" width="7.0" height="17.1" fill="#c0392b"/><rect x="30.0" y="21.1" width="7.0" height="2.9" fill="#c0392b"/><rect x="40.0" y="21.1" width="7.0" height="2.9" fill="#27ae60"/><rect x="50.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="60.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="70.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="AIT" data-market="SET" data-new="0" data-np="145120.0" data-mcap="7620621237.12" data-eps="0.09" data-qoq="1.3" data-yoy="1.0">
+<td><b>AIT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">7.6B</td>
+<td class="num">0.09</td>
+<td class="num">145.1</td>
+<td class="num">143.2</td>
+<td class="num">143.7</td>
+<td class="num pos">+1.3%</td>
+<td class="num pos">+1.0%</td>
+<td class="num">1,727.2</td>
+<td class="num pos">+1.2%</td>
+<td class="num pos">+0.8%</td>
+<td class="num pos">+2.1%</td>
+<td class="num pos">+3.3%</td>
+<td class="num pos">+1.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="ASIAN" data-market="SET" data-new="1" data-np="142272.0" data-mcap="6187065448.4" data-eps="0.18" data-qoq="13.3" data-yoy="-12.4">
+<td><b>ASIAN</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>FOOD</td>
+<td class="num">6.2B</td>
+<td class="num">0.18</td>
+<td class="num">142.3</td>
+<td class="num">125.5</td>
+<td class="num">162.3</td>
+<td class="num pos">+13.3%</td>
+<td class="num neg">-12.4%</td>
+<td class="num">2,396.8</td>
+<td class="num neg">-0.7%</td>
+<td class="num pos">+1.3%</td>
+<td class="num pos">+0.7%</td>
+<td class="num pos">+4.1%</td>
+<td class="num pos">+5.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="20.0" width="7.0" height="4.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="50.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/><rect x="80.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="90.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="ICC" data-market="SET" data-new="1" data-np="140856.0" data-mcap="12050000000.0" data-eps="0.28" data-qoq="2.7" data-yoy="-26.4">
+<td><b>ICC</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>COMM</td>
+<td class="num">12.1B</td>
+<td class="num">0.28</td>
+<td class="num">140.9</td>
+<td class="num">137.1</td>
+<td class="num">191.4</td>
+<td class="num pos">+2.7%</td>
+<td class="num neg">-26.4%</td>
+<td class="num">2,156.2</td>
+<td class="num pos">+0.4%</td>
+<td class="num neg">-0.4%</td>
+<td class="num neg">-3.2%</td>
+<td class="num neg">-0.4%</td>
+<td class="num neg">-3.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.8" height="20.0" fill="#95a5a6"/><rect x="11.1" y="0" width="7.8" height="24" fill="#ddd"/><rect x="22.2" y="9.0" width="7.8" height="15.0" fill="#95a5a6"/><rect x="33.3" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="44.4" y="19.0" width="7.8" height="5.0" fill="#27ae60"/><rect x="55.6" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="66.7" y="19.0" width="7.8" height="5.0" fill="#27ae60"/><rect x="77.8" y="14.0" width="7.8" height="10.0" fill="#27ae60"/><rect x="88.9" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="100.0" y="21.5" width="7.8" height="2.5" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="NYT" data-market="SET" data-new="0" data-np="116650.0" data-mcap="5183200000.0" data-eps="0.09" data-qoq="-5.7" data-yoy="19.9">
+<td><b>NYT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>TRANS</td>
+<td class="num">5.2B</td>
+<td class="num">0.09</td>
+<td class="num">116.7</td>
+<td class="num">123.7</td>
+<td class="num">97.3</td>
+<td class="num neg">-5.7%</td>
+<td class="num pos">+19.9%</td>
+<td class="num">469.9</td>
+<td class="num pos">+3.0%</td>
+<td class="num pos">+2.5%</td>
+<td class="num pos">+3.5%</td>
+<td class="num pos">+4.0%</td>
+<td class="num pos">+38.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="21.1" width="7.0" height="2.9" fill="#27ae60"/><rect x="40.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="50.0" y="15.4" width="7.0" height="8.6" fill="#27ae60"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="70.0" y="21.1" width="7.0" height="2.9" fill="#27ae60"/><rect x="80.0" y="21.1" width="7.0" height="2.9" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="CSC" data-market="SET" data-new="0" data-np="109615.0" data-mcap="2418036037.5" data-eps="2.11" data-qoq="2.3" data-yoy="64.7">
+<td><b>CSC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PKG</td>
+<td class="num">2.4B</td>
+<td class="num">2.11</td>
+<td class="num">109.6</td>
+<td class="num">107.1</td>
+<td class="num">66.6</td>
+<td class="num pos">+2.3%</td>
+<td class="num pos">+64.7%</td>
+<td class="num">1,035.7</td>
+<td class="num pos">+1.6%</td>
+<td class="num pos">+3.9%</td>
+<td class="num pos">+4.5%</td>
+<td class="num pos">+5.1%</td>
+<td class="num pos">+4.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="21.5" width="7.0" height="2.5" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="21.5" width="7.0" height="2.5" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="21.5" width="7.0" height="2.5" fill="#27ae60"/><rect x="50.0" y="21.5" width="7.0" height="2.5" fill="#27ae60"/><rect x="60.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="70.0" y="11.5" width="7.0" height="12.5" fill="#27ae60"/><rect x="80.0" y="11.5" width="7.0" height="12.5" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TAE" data-market="SET" data-new="0" data-np="99579.0" data-mcap="1530000000.0" data-eps="0.1" data-qoq="-20.8" data-yoy="-540.8">
+<td><b>TAE</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">1.5B</td>
+<td class="num">0.10</td>
+<td class="num">99.6</td>
+<td class="num">125.7</td>
+<td class="num">-22.6</td>
+<td class="num neg">-20.8%</td>
+<td class="num neg">-540.8%</td>
+<td class="num">651.2</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-8.9%</td>
+<td class="num neg">-8.9%</td>
+<td class="num pos">+5.5%</td>
+<td class="num pos">+212.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="7.8" width="7.0" height="16.2" fill="#95a5a6"/><rect x="10.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="30.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="6.5" width="7.0" height="17.5" fill="#c0392b"/><rect x="60.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TC" data-market="SET" data-new="1" data-np="99308.0" data-mcap="2310000000.0" data-eps="0.3" data-qoq="51.6" data-yoy="115.9">
+<td><b>TC</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>FOOD</td>
+<td class="num">2.3B</td>
+<td class="num">0.30</td>
+<td class="num">99.3</td>
+<td class="num">65.5</td>
+<td class="num">46.0</td>
+<td class="num pos">+51.6%</td>
+<td class="num pos">+115.9%</td>
+<td class="num">1,714.3</td>
+<td class="num pos">+1.4%</td>
+<td class="num pos">+6.1%</td>
+<td class="num pos">+6.9%</td>
+<td class="num pos">+4.5%</td>
+<td class="num pos">+40.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.0" width="7.0" height="5.0" fill="#95a5a6"/><rect x="10.0" y="16.5" width="7.0" height="7.5" fill="#27ae60"/><rect x="20.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="16.5" width="7.0" height="7.5" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="11.5" width="7.0" height="12.5" fill="#27ae60"/><rect x="80.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="GLAND" data-market="SET" data-new="0" data-np="99017.0" data-mcap="-1" data-eps="0.02" data-qoq="-10.7" data-yoy="-20.9">
+<td><b>GLAND</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">-</td>
+<td class="num">0.02</td>
+<td class="num">99.0</td>
+<td class="num">110.8</td>
+<td class="num">125.2</td>
+<td class="num neg">-10.7%</td>
+<td class="num neg">-20.9%</td>
+<td class="num">404.2</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td><span class="na">-</span></td>
+</tr>
+<tr data-sym="CMAN" data-market="SET" data-new="1" data-np="83707.0" data-mcap="2860800000.0" data-eps="0.09" data-qoq="-51.3" data-yoy="-22.0">
+<td><b>CMAN</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PETRO</td>
+<td class="num">2.9B</td>
+<td class="num">0.09</td>
+<td class="num">83.7</td>
+<td class="num">172.0</td>
+<td class="num">107.3</td>
+<td class="num neg">-51.3%</td>
+<td class="num neg">-22.0%</td>
+<td class="num">916.9</td>
+<td class="num neg">-2.6%</td>
+<td class="num neg">-3.2%</td>
+<td class="num pos">+2.0%</td>
+<td class="num pos">+5.7%</td>
+<td class="num pos">+26.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="11.5" width="7.0" height="12.5" fill="#27ae60"/><rect x="20.0" y="6.5" width="7.0" height="17.5" fill="#27ae60"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="6.5" width="7.0" height="17.5" fill="#c0392b"/><rect x="80.0" y="6.5" width="7.0" height="17.5" fill="#27ae60"/><rect x="90.0" y="16.5" width="7.0" height="7.5" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="LST" data-market="SET" data-new="1" data-np="80447.0" data-mcap="3886800000.0" data-eps="0.1" data-qoq="-39.1" data-yoy="-38.3">
+<td><b>LST</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>FOOD</td>
+<td class="num">3.9B</td>
+<td class="num">0.10</td>
+<td class="num">80.4</td>
+<td class="num">132.1</td>
+<td class="num">130.4</td>
+<td class="num neg">-39.1%</td>
+<td class="num neg">-38.3%</td>
+<td class="num">3,315.5</td>
+<td class="num neg">-0.8%</td>
+<td class="num neg">-0.4%</td>
+<td class="num neg">-0.4%</td>
+<td class="num pos">+0.4%</td>
+<td class="num pos">+0.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="10.7" width="7.0" height="13.3" fill="#95a5a6"/><rect x="10.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="20.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="30.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="50.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="60.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="THIP" data-market="SET" data-new="0" data-np="76738.0" data-mcap="1988993060.6" data-eps="0.85" data-qoq="175.8" data-yoy="26.4">
+<td><b>THIP</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PKG</td>
+<td class="num">2.0B</td>
+<td class="num">0.85</td>
+<td class="num">76.7</td>
+<td class="num">27.8</td>
+<td class="num">60.7</td>
+<td class="num pos">+175.8%</td>
+<td class="num pos">+26.4%</td>
+<td class="num">1,201.1</td>
+<td class="num pos">+4.7%</td>
+<td class="num pos">+4.7%</td>
+<td class="num pos">+5.2%</td>
+<td class="num pos">+5.2%</td>
+<td class="num neg">-2.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.0" width="7.0" height="5.0" fill="#95a5a6"/><rect x="10.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TSC" data-market="SET" data-new="0" data-np="72433.0" data-mcap="3948960000.0" data-eps="0.28" data-qoq="-29.5" data-yoy="-23.0">
+<td><b>TSC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>AUTO</td>
+<td class="num">3.9B</td>
+<td class="num">0.28</td>
+<td class="num">72.4</td>
+<td class="num">102.7</td>
+<td class="num">94.1</td>
+<td class="num neg">-29.5%</td>
+<td class="num neg">-23.0%</td>
+<td class="num">607.7</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-0.7%</td>
+<td class="num neg">-0.7%</td>
+<td class="num pos">+1.3%</td>
+<td class="num neg">-1.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="CPI" data-market="SET" data-new="0" data-np="65013.0" data-mcap="2189324169.0" data-eps="0.1" data-qoq="-13.2" data-yoy="-74.3">
+<td><b>CPI</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FOOD</td>
+<td class="num">2.2B</td>
+<td class="num">0.10</td>
+<td class="num">65.0</td>
+<td class="num">74.9</td>
+<td class="num">253.0</td>
+<td class="num neg">-13.2%</td>
+<td class="num neg">-74.3%</td>
+<td class="num">1,526.1</td>
+<td class="num neg">-6.0%</td>
+<td class="num neg">-5.5%</td>
+<td class="num neg">-5.5%</td>
+<td class="num pos">+0.6%</td>
+<td class="num pos">+6.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="7.3" width="7.0" height="16.7" fill="#95a5a6"/><rect x="10.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="20.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="30.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="40.0" y="7.3" width="7.0" height="16.7" fill="#27ae60"/><rect x="50.0" y="5.7" width="7.0" height="18.3" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="7.3" width="7.0" height="16.7" fill="#c0392b"/><rect x="80.0" y="5.7" width="7.0" height="18.3" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="AKR" data-market="SET" data-new="0" data-np="53077.83" data-mcap="1413021785.28" data-eps="0.04" data-qoq="627.8" data-yoy="175.8">
+<td><b>AKR</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>IMM</td>
+<td class="num">1.4B</td>
+<td class="num">0.04</td>
+<td class="num">53.1</td>
+<td class="num">7.3</td>
+<td class="num">19.2</td>
+<td class="num pos">+627.8%</td>
+<td class="num pos">+175.8%</td>
+<td class="num">552.8</td>
+<td class="num pos">+6.7%</td>
+<td class="num pos">+7.9%</td>
+<td class="num pos">+5.5%</td>
+<td class="num pos">+5.5%</td>
+<td class="num pos">+10.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="21.1" width="7.0" height="2.9" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="21.1" width="7.0" height="2.9" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="60.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="70.0" y="21.1" width="7.0" height="2.9" fill="#c0392b"/><rect x="80.0" y="21.1" width="7.0" height="2.9" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="HFT" data-market="SET" data-new="0" data-np="48120.97" data-mcap="2686411944.0" data-eps="0.07" data-qoq="-30.6" data-yoy="86.8">
+<td><b>HFT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>AUTO</td>
+<td class="num">2.7B</td>
+<td class="num">0.07</td>
+<td class="num">48.1</td>
+<td class="num">69.3</td>
+<td class="num">25.8</td>
+<td class="num neg">-30.6%</td>
+<td class="num pos">+86.8%</td>
+<td class="num">702.9</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.5%</td>
+<td class="num pos">+1.0%</td>
+<td class="num pos">+2.5%</td>
+<td class="num neg">-2.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="21.1" width="7.0" height="2.9" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="50.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="60.0" y="15.4" width="7.0" height="8.6" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="15.4" width="7.0" height="8.6" fill="#c0392b"/><rect x="90.0" y="15.4" width="7.0" height="8.6" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="PRTR" data-market="SET" data-new="1" data-np="47037.91" data-mcap="2124000000.0" data-eps="0.08" data-qoq="-12.9" data-yoy="-17.8">
+<td><b>PRTR</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PROF</td>
+<td class="num">2.1B</td>
+<td class="num">0.08</td>
+<td class="num">47.0</td>
+<td class="num">54.0</td>
+<td class="num">57.2</td>
+<td class="num neg">-12.9%</td>
+<td class="num neg">-17.8%</td>
+<td class="num">1,953.7</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+1.1%</td>
+<td class="num pos">+3.5%</td>
+<td class="num pos">+12.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="40.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SMT" data-market="SET" data-new="0" data-np="40706.0" data-mcap="4444012173.9" data-eps="0.05" data-qoq="262.1" data-yoy="-190.4">
+<td><b>SMT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ETRON</td>
+<td class="num">4.4B</td>
+<td class="num">0.05</td>
+<td class="num">40.7</td>
+<td class="num">11.2</td>
+<td class="num">-45.0</td>
+<td class="num pos">+262.1%</td>
+<td class="num neg">-190.4%</td>
+<td class="num">729.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+10.9%</td>
+<td class="num pos">+12.3%</td>
+<td class="num pos">+58.7%</td>
+<td class="num pos">+390.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="18.0" width="7.0" height="6.0" fill="#95a5a6"/><rect x="10.0" y="10.1" width="7.0" height="13.9" fill="#27ae60"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="18.4" width="7.0" height="5.6" fill="#27ae60"/><rect x="50.0" y="8.4" width="7.0" height="15.6" fill="#27ae60"/><rect x="60.0" y="10.1" width="7.0" height="13.9" fill="#c0392b"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="9.3" width="7.0" height="14.7" fill="#c0392b"/><rect x="90.0" y="9.3" width="7.0" height="14.7" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="KDH" data-market="SET" data-new="1" data-np="38065.0" data-mcap="1633121040.5" data-eps="1.96" data-qoq="-18.8" data-yoy="-3.3">
+<td><b>KDH</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>HELTH</td>
+<td class="num">1.6B</td>
+<td class="num">1.96</td>
+<td class="num">38.1</td>
+<td class="num">46.9</td>
+<td class="num">39.3</td>
+<td class="num neg">-18.8%</td>
+<td class="num neg">-3.3%</td>
+<td class="num">290.0</td>
+<td class="num na">-</td>
+<td class="num neg">-4.3%</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="0" width="23.3" height="24" fill="#ddd"/><rect x="33.3" y="22.0" width="23.3" height="2.0" fill="#95a5a6"/><rect x="66.7" y="0" width="23.3" height="24" fill="#ddd"/><rect x="100.0" y="0" width="23.3" height="24" fill="#ddd"/><rect x="133.3" y="4.0" width="23.3" height="20.0" fill="#95a5a6"/><rect x="166.7" y="0" width="23.3" height="24" fill="#ddd"/><rect x="200.0" y="0" width="23.3" height="24" fill="#ddd"/><rect x="233.3" y="0" width="23.3" height="24" fill="#ddd"/><rect x="266.7" y="0" width="23.3" height="24" fill="#ddd"/><rect x="300.0" y="19.8" width="23.3" height="4.2" fill="#95a5a6"/></svg></td>
+</tr>
+<tr data-sym="SAFE" data-market="SET" data-new="0" data-np="29398.3" data-mcap="1641318120.0" data-eps="0.1" data-qoq="-13.4" data-yoy="-13.5">
+<td><b>SAFE</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>HELTH</td>
+<td class="num">1.6B</td>
+<td class="num">0.10</td>
+<td class="num">29.4</td>
+<td class="num">34.0</td>
+<td class="num">34.0</td>
+<td class="num neg">-13.4%</td>
+<td class="num neg">-13.5%</td>
+<td class="num">173.5</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-3.6%</td>
+<td class="num neg">-6.9%</td>
+<td class="num neg">-12.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="60.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="HENG" data-market="SET" data-new="1" data-np="28207.0" data-mcap="3733800000.0" data-eps="0.01" data-qoq="-55.3" data-yoy="125.2">
+<td><b>HENG</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>FIN</td>
+<td class="num">3.7B</td>
+<td class="num">0.01</td>
+<td class="num">28.2</td>
+<td class="num">63.1</td>
+<td class="num">12.5</td>
+<td class="num neg">-55.3%</td>
+<td class="num pos">+125.2%</td>
+<td class="num">394.7</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.0%</td>
+<td class="num pos">+3.2%</td>
+<td class="num pos">+4.3%</td>
+<td class="num pos">+2.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="70.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="90.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="IFS" data-market="SET" data-new="0" data-np="27793.89" data-mcap="972194950.75" data-eps="0.06" data-qoq="75.8" data-yoy="-27.3">
+<td><b>IFS</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FIN</td>
+<td class="num">972M</td>
+<td class="num">0.06</td>
+<td class="num">27.8</td>
+<td class="num">15.8</td>
+<td class="num">38.2</td>
+<td class="num pos">+75.8%</td>
+<td class="num neg">-27.3%</td>
+<td class="num">116.1</td>
+<td class="num pos">+1.6%</td>
+<td class="num pos">+1.6%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+5.9%</td>
+<td class="num neg">-7.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="9.0" width="7.0" height="15.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="30.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="40.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TEKA" data-market="SET" data-new="0" data-np="24782.0" data-mcap="543000000.0" data-eps="0.08" data-qoq="58.0" data-yoy="22.2">
+<td><b>TEKA</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>CONST</td>
+<td class="num">543M</td>
+<td class="num">0.08</td>
+<td class="num">24.8</td>
+<td class="num">15.7</td>
+<td class="num">20.3</td>
+<td class="num pos">+58.0%</td>
+<td class="num pos">+22.2%</td>
+<td class="num">533.3</td>
+<td class="num pos">+0.6%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+2.3%</td>
+<td class="num pos">+4.0%</td>
+<td class="num pos">+6.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="7.3" width="7.0" height="16.7" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="ALT" data-market="SET" data-new="0" data-np="22402.83" data-mcap="1902142063.92" data-eps="0.02" data-qoq="148.5" data-yoy="-73.6">
+<td><b>ALT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">1.9B</td>
+<td class="num">0.02</td>
+<td class="num">22.4</td>
+<td class="num">9.0</td>
+<td class="num">84.7</td>
+<td class="num pos">+148.5%</td>
+<td class="num neg">-73.6%</td>
+<td class="num">430.7</td>
+<td class="num neg">-2.3%</td>
+<td class="num neg">-1.8%</td>
+<td class="num neg">-0.6%</td>
+<td class="num neg">-1.8%</td>
+<td class="num pos">+58.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="20.0" y="21.0" width="7.0" height="3.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="18.0" width="7.0" height="6.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="80.0" y="17.0" width="7.0" height="7.0" fill="#c0392b"/><rect x="90.0" y="21.0" width="7.0" height="3.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="FMT" data-market="SET" data-new="0" data-np="18115.0" data-mcap="969600000.0" data-eps="0.38" data-qoq="-60.4" data-yoy="-227.6">
+<td><b>FMT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>IMM</td>
+<td class="num">970M</td>
+<td class="num">0.38</td>
+<td class="num">18.1</td>
+<td class="num">45.8</td>
+<td class="num">-14.2</td>
+<td class="num neg">-60.4%</td>
+<td class="num neg">-227.6%</td>
+<td class="num">2,063.6</td>
+<td class="num pos">+2.0%</td>
+<td class="num pos">+2.0%</td>
+<td class="num pos">+3.6%</td>
+<td class="num neg">-1.0%</td>
+<td class="num neg">-17.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="12.3" width="7.0" height="11.7" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="30.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="50.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="90.0" y="15.7" width="7.0" height="8.3" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="KUN" data-market="SET" data-new="0" data-np="13261.51" data-mcap="491630563.8" data-eps="0.02" data-qoq="-665.3" data-yoy="-40.6">
+<td><b>KUN</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">492M</td>
+<td class="num">0.02</td>
+<td class="num">13.3</td>
+<td class="num">-2.3</td>
+<td class="num">22.3</td>
+<td class="num neg">-665.3%</td>
+<td class="num neg">-40.6%</td>
+<td class="num">173.2</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-1.6%</td>
+<td class="num neg">-9.1%</td>
+<td class="num neg">-28.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="CSR" data-market="SET" data-new="0" data-np="12968.01" data-mcap="-1" data-eps="0.63" data-qoq="-44.4" data-yoy="28.6">
+<td><b>CSR</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>TOURISM</td>
+<td class="num">-</td>
+<td class="num">0.63</td>
+<td class="num">13.0</td>
+<td class="num">23.3</td>
+<td class="num">10.1</td>
+<td class="num neg">-44.4%</td>
+<td class="num pos">+28.6%</td>
+<td class="num">49.2</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td><span class="na">-</span></td>
+</tr>
+<tr data-sym="SINO" data-market="SET" data-new="0" data-np="10247.0" data-mcap="956800000.0" data-eps="0.01" data-qoq="359.3" data-yoy="-19.2">
+<td><b>SINO</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>TRANS</td>
+<td class="num">957M</td>
+<td class="num">0.01</td>
+<td class="num">10.2</td>
+<td class="num">2.2</td>
+<td class="num">12.7</td>
+<td class="num pos">+359.3%</td>
+<td class="num neg">-19.2%</td>
+<td class="num">804.3</td>
+<td class="num neg">-2.1%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-3.2%</td>
+<td class="num pos">+2.2%</td>
+<td class="num neg">-2.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.3" width="7.0" height="6.7" fill="#95a5a6"/><rect x="10.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="60.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="KIAT" data-market="SET" data-new="0" data-np="10106.11" data-mcap="1050738951.2" data-eps="-1e+18" data-qoq="-20.5" data-yoy="-40.6">
+<td><b>KIAT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>TRANS</td>
+<td class="num">1.1B</td>
+<td class="num">-</td>
+<td class="num">10.1</td>
+<td class="num">12.7</td>
+<td class="num">17.0</td>
+<td class="num neg">-20.5%</td>
+<td class="num neg">-40.6%</td>
+<td class="num">187.8</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+3.0%</td>
+<td class="num pos">+3.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+6.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="NVD" data-market="SET" data-new="0" data-np="7355.52" data-mcap="1537078284.01" data-eps="-1e+18" data-qoq="-298.3" data-yoy="-122.8">
+<td><b>NVD</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">1.5B</td>
+<td class="num">-</td>
+<td class="num">7.4</td>
+<td class="num">-3.7</td>
+<td class="num">-32.3</td>
+<td class="num neg">-298.3%</td>
+<td class="num neg">-122.8%</td>
+<td class="num">220.2</td>
+<td class="num pos">+1.2%</td>
+<td class="num pos">+1.2%</td>
+<td class="num pos">+1.2%</td>
+<td class="num neg">-5.7%</td>
+<td class="num pos">+2.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="9.0" width="7.0" height="15.0" fill="#95a5a6"/><rect x="10.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="40.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="80.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="UPOIC" data-market="SET" data-new="0" data-np="3444.0" data-mcap="2154932500.0" data-eps="0.01" data-qoq="-95.6" data-yoy="-88.2">
+<td><b>UPOIC</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>AGRI</td>
+<td class="num">2.2B</td>
+<td class="num">0.01</td>
+<td class="num">3.4</td>
+<td class="num">78.8</td>
+<td class="num">29.3</td>
+<td class="num neg">-95.6%</td>
+<td class="num neg">-88.2%</td>
+<td class="num">778.3</td>
+<td class="num neg">-2.2%</td>
+<td class="num neg">-3.6%</td>
+<td class="num neg">-2.9%</td>
+<td class="num neg">-2.2%</td>
+<td class="num pos">+1.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="8.0" width="7.0" height="16.0" fill="#c0392b"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/><rect x="60.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="70.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/><rect x="80.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="TPA" data-market="SET" data-new="1" data-np="2012.63" data-mcap="303750000.0" data-eps="0.02" data-qoq="-28.6" data-yoy="-117.6">
+<td><b>TPA</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PETRO</td>
+<td class="num">304M</td>
+<td class="num">0.02</td>
+<td class="num">2.0</td>
+<td class="num">2.8</td>
+<td class="num">-11.4</td>
+<td class="num neg">-28.6%</td>
+<td class="num neg">-117.6%</td>
+<td class="num">115.4</td>
+<td class="num na">-</td>
+<td class="num neg">-6.7%</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="0" width="11.7" height="24" fill="#ddd"/><rect x="16.7" y="4.0" width="11.7" height="20.0" fill="#95a5a6"/><rect x="33.3" y="0" width="11.7" height="24" fill="#ddd"/><rect x="50.0" y="0" width="11.7" height="24" fill="#ddd"/><rect x="66.7" y="4.0" width="11.7" height="20.0" fill="#95a5a6"/><rect x="83.3" y="6.2" width="11.7" height="17.8" fill="#c0392b"/><rect x="100.0" y="17.3" width="11.7" height="6.7" fill="#c0392b"/><rect x="116.7" y="21.8" width="11.7" height="2.2" fill="#c0392b"/><rect x="133.3" y="0" width="11.7" height="24" fill="#ddd"/><rect x="150.0" y="22.0" width="11.7" height="2.0" fill="#95a5a6"/></svg></td>
+</tr>
+<tr data-sym="PRECHA" data-market="SET" data-new="0" data-np="-17623.0" data-mcap="147840000.0" data-eps="-0.05" data-qoq="-11.3" data-yoy="106.8">
+<td><b>PRECHA</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">148M</td>
+<td class="num">-0.05</td>
+<td class="num">-17.6</td>
+<td class="num">-19.9</td>
+<td class="num">-8.5</td>
+<td class="num neg">-11.3%</td>
+<td class="num pos">+106.8%</td>
+<td class="num">83.6</td>
+<td class="num pos">+2.3%</td>
+<td class="num neg">-2.2%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-4.3%</td>
+<td class="num pos">+2.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="40.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="80.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TYCN" data-market="SET" data-new="0" data-np="-21810.0" data-mcap="1008505641.0" data-eps="-0.04" data-qoq="204.7" data-yoy="-157.0">
+<td><b>TYCN</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>STEEL AN</td>
+<td class="num">1.0B</td>
+<td class="num">-0.04</td>
+<td class="num">-21.8</td>
+<td class="num">-7.2</td>
+<td class="num">38.2</td>
+<td class="num pos">+204.7%</td>
+<td class="num neg">-157.0%</td>
+<td class="num">1,839.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.2%</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num neg">-2.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.8" height="10.0" fill="#95a5a6"/><rect x="11.1" y="0" width="7.8" height="24" fill="#ddd"/><rect x="22.2" y="14.0" width="7.8" height="10.0" fill="#95a5a6"/><rect x="33.3" y="14.0" width="7.8" height="10.0" fill="#27ae60"/><rect x="44.4" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="55.6" y="14.0" width="7.8" height="10.0" fill="#27ae60"/><rect x="66.7" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="77.8" y="14.0" width="7.8" height="10.0" fill="#27ae60"/><rect x="88.9" y="4.0" width="7.8" height="20.0" fill="#27ae60"/><rect x="100.0" y="4.0" width="7.8" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SAMCO" data-market="SET" data-new="0" data-np="-23509.0" data-mcap="571202396.94" data-eps="-0.04" data-qoq="-115.0" data-yoy="500.0">
+<td><b>SAMCO</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PROP</td>
+<td class="num">571M</td>
+<td class="num">-0.04</td>
+<td class="num">-23.5</td>
+<td class="num">156.8</td>
+<td class="num">-3.9</td>
+<td class="num neg">-115.0%</td>
+<td class="num pos">+500.0%</td>
+<td class="num">230.2</td>
+<td class="num pos">+2.3%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.1%</td>
+<td class="num pos">+8.5%</td>
+<td class="num pos">+20.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="16.0" width="7.0" height="8.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="8.0" width="7.0" height="16.0" fill="#c0392b"/><rect x="30.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="40.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="50.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="60.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="90.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TOG" data-market="SET" data-new="0" data-np="-31551.0" data-mcap="3462521400.0" data-eps="-0.07" data-qoq="-130.7" data-yoy="-176.0">
+<td><b>TOG</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PERSON</td>
+<td class="num">3.5B</td>
+<td class="num">-0.07</td>
+<td class="num">-31.6</td>
+<td class="num">102.8</td>
+<td class="num">41.5</td>
+<td class="num neg">-130.7%</td>
+<td class="num neg">-176.0%</td>
+<td class="num">992.8</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-4.6%</td>
+<td class="num neg">-4.6%</td>
+<td class="num neg">-4.6%</td>
+<td class="num pos">+11.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="6.5" width="7.0" height="17.5" fill="#c0392b"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="70.0" y="21.5" width="7.0" height="2.5" fill="#27ae60"/><rect x="80.0" y="21.5" width="7.0" height="2.5" fill="#27ae60"/><rect x="90.0" y="21.5" width="7.0" height="2.5" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="APCS" data-market="SET" data-new="1" data-np="-31590.77" data-mcap="824999827.5" data-eps="-0.05" data-qoq="-63.4" data-yoy="-42.6">
+<td><b>APCS</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>CONST</td>
+<td class="num">825M</td>
+<td class="num">-0.05</td>
+<td class="num">-31.6</td>
+<td class="num">-86.3</td>
+<td class="num">-55.1</td>
+<td class="num neg">-63.4%</td>
+<td class="num neg">-42.6%</td>
+<td class="num">271.2</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-0.8%</td>
+<td class="num neg">-5.3%</td>
+<td class="num na">-</td>
+<td class="num neg">-14.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="12.0" width="7.0" height="12.0" fill="#95a5a6"/><rect x="10.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="50.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="60.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="70.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="KYE" data-market="SET" data-new="1" data-np="-49256.0" data-mcap="5860800000.0" data-eps="-2.49" data-qoq="57.1" data-yoy="999.0">
+<td><b>KYE</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>HOME</td>
+<td class="num">5.9B</td>
+<td class="num">-2.49</td>
+<td class="num">-49.3</td>
+<td class="num">-31.3</td>
+<td class="num">-4.5</td>
+<td class="num pos">+57.1%</td>
+<td class="num pos">+999.0%</td>
+<td class="num">1,269.6</td>
+<td class="num pos">+0.3%</td>
+<td class="num neg">-7.5%</td>
+<td class="num neg">-8.4%</td>
+<td class="num neg">-5.1%</td>
+<td class="num pos">+3.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.7" width="7.0" height="19.3" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="6.9" width="7.0" height="17.1" fill="#c0392b"/><rect x="30.0" y="7.6" width="7.0" height="16.4" fill="#c0392b"/><rect x="40.0" y="6.1" width="7.0" height="17.9" fill="#27ae60"/><rect x="50.0" y="21.1" width="7.0" height="2.9" fill="#c0392b"/><rect x="60.0" y="21.9" width="7.0" height="2.1" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="DDD" data-market="SET" data-new="1" data-np="-51767.0" data-mcap="1589438500.0" data-eps="-0.16" data-qoq="127.0" data-yoy="-483.0">
+<td><b>DDD</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PERSON</td>
+<td class="num">1.6B</td>
+<td class="num">-0.16</td>
+<td class="num">-51.8</td>
+<td class="num">-22.8</td>
+<td class="num">13.5</td>
+<td class="num pos">+127.0%</td>
+<td class="num neg">-483.0%</td>
+<td class="num">289.3</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-2.0%</td>
+<td class="num neg">-1.0%</td>
+<td class="num pos">+4.2%</td>
+<td class="num neg">-13.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="15.8" width="7.0" height="8.2" fill="#95a5a6"/><rect x="10.0" y="9.9" width="7.0" height="14.1" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="9.9" width="7.0" height="14.1" fill="#c0392b"/><rect x="40.0" y="9.9" width="7.0" height="14.1" fill="#27ae60"/><rect x="50.0" y="9.9" width="7.0" height="14.1" fill="#27ae60"/><rect x="60.0" y="15.8" width="7.0" height="8.2" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="21.6" width="7.0" height="2.4" fill="#27ae60"/><rect x="90.0" y="21.6" width="7.0" height="2.4" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="THCOM" data-market="SET" data-new="0" data-np="-87425.0" data-mcap="12276341884.8" data-eps="-0.08" data-qoq="-114.9" data-yoy="-57.8">
+<td><b>THCOM</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">12.3B</td>
+<td class="num">-0.08</td>
+<td class="num">-87.4</td>
+<td class="num">587.7</td>
+<td class="num">-207.2</td>
+<td class="num neg">-114.9%</td>
+<td class="num neg">-57.8%</td>
+<td class="num">541.0</td>
+<td class="num pos">+5.7%</td>
+<td class="num pos">+2.8%</td>
+<td class="num pos">+1.8%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+28.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="30.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="70.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="GJS" data-market="SET" data-new="0" data-np="-89904.0" data-mcap="3313327536.48" data-eps="-1e+18" data-qoq="19.9" data-yoy="-71.1">
+<td><b>GJS</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>STEEL AN</td>
+<td class="num">3.3B</td>
+<td class="num">-</td>
+<td class="num">-89.9</td>
+<td class="num">-75.0</td>
+<td class="num">-310.9</td>
+<td class="num pos">+19.9%</td>
+<td class="num neg">-71.1%</td>
+<td class="num">4,089.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+30.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="GSTEEL" data-market="SET" data-new="0" data-np="-306139.0" data-mcap="-1" data-eps="-0.01" data-qoq="50.1" data-yoy="-24.3">
+<td><b>GSTEEL</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>STEEL AN</td>
+<td class="num">-</td>
+<td class="num">-0.01</td>
+<td class="num">-306.1</td>
+<td class="num">-204.0</td>
+<td class="num">-404.6</td>
+<td class="num pos">+50.1%</td>
+<td class="num neg">-24.3%</td>
+<td class="num">4,210.0</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td><span class="na">-</span></td>
+</tr>
+<tr data-sym="OR" data-market="SET" data-new="0" data-np="-1774947.38" data-mcap="150000000000.0" data-eps="-0.15" data-qoq="-173.5" data-yoy="-179.5">
+<td><b>OR</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">150.0B</td>
+<td class="num">-0.15</td>
+<td class="num">-1,774.9</td>
+<td class="num">2,414.8</td>
+<td class="num">2,231.8</td>
+<td class="num neg">-173.5%</td>
+<td class="num neg">-179.5%</td>
+<td class="num">206,533.4</td>
+<td class="num neg">-1.6%</td>
+<td class="num neg">-2.3%</td>
+<td class="num neg">-3.9%</td>
+<td class="num neg">-1.6%</td>
+<td class="num neg">-7.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="10.7" width="7.0" height="13.3" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="BAREIT" data-market="SET" data-new="0" data-np="-1e+18" data-mcap="11776200000.0" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>BAREIT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PF&REIT</td>
+<td class="num">11.8B</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">296.5</td>
+<td class="num neg">-0.9%</td>
+<td class="num neg">-1.7%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.9%</td>
+<td class="num pos">+10.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.0" width="7.0" height="5.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="40.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="90.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="CTARAF" data-market="SET" data-new="0" data-np="-1e+18" data-mcap="1510400000.0" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>CTARAF</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PF&REIT</td>
+<td class="num">1.5B</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">45.9</td>
+<td class="num zero">+0.0%</td>
+<td class="num na">-</td>
+<td class="num neg">-0.4%</td>
+<td class="num neg">-0.4%</td>
+<td class="num pos">+3.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.8" height="20.0" fill="#95a5a6"/><rect x="11.1" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="22.2" y="22.0" width="7.8" height="2.0" fill="#27ae60"/><rect x="33.3" y="22.0" width="7.8" height="2.0" fill="#27ae60"/><rect x="44.4" y="0" width="7.8" height="24" fill="#ddd"/><rect x="55.6" y="4.0" width="7.8" height="20.0" fill="#95a5a6"/><rect x="66.7" y="4.0" width="7.8" height="20.0" fill="#27ae60"/><rect x="77.8" y="4.0" width="7.8" height="20.0" fill="#27ae60"/><rect x="88.9" y="22.0" width="7.8" height="2.0" fill="#c0392b"/><rect x="100.0" y="22.0" width="7.8" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SSTRT" data-market="SET" data-new="0" data-np="-1e+18" data-mcap="909874000.0" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>SSTRT</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>PF&REIT</td>
+<td class="num">910M</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">33.9</td>
+<td class="num pos">+0.4%</td>
+<td class="num pos">+2.1%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+11.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="30.0" y="20.0" width="7.0" height="4.0" fill="#27ae60"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="50.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="60.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="70.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="80.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="WHABT" data-market="SET" data-new="1" data-np="-1e+18" data-mcap="1313000000.0" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>WHABT</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PF&REIT</td>
+<td class="num">1.3B</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">42.6</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.8%</td>
+<td class="num pos">+1.6%</td>
+<td class="num pos">+6.6%</td>
+<td class="num pos">+9.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="WHART" data-market="SET" data-new="1" data-np="-1e+18" data-mcap="39197750083.3" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>WHART</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PF&REIT</td>
+<td class="num">39.2B</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">890.1</td>
+<td class="num neg">-0.9%</td>
+<td class="num neg">-0.9%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+2.7%</td>
+<td class="num pos">+7.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="17.3" width="7.0" height="6.7" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="30.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="40.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="50.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="90.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="BRRGIF" data-market="SET" data-new="0" data-np="-1e+18" data-mcap="1330000000.0" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>BRRGIF</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ENERG</td>
+<td class="num">1.3B</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">28.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.1%</td>
+<td class="num pos">+0.5%</td>
+<td class="num pos">+1.1%</td>
+<td class="num pos">+1.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="3BBIF" data-market="SET" data-new="0" data-np="-1e+18" data-mcap="52400000000.0" data-eps="-1e+18" data-qoq="-1e+18" data-yoy="-1e+18">
+<td><b>3BBIF</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>ICT</td>
+<td class="num">52.4B</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num">1,871.8</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+2.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="NTF" data-market="mai" data-new="0" data-np="244200.78" data-mcap="2920000000.0" data-eps="1.22" data-qoq="658.2" data-yoy="-1e+18">
+<td><b>NTF</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>AGRO</td>
+<td class="num">2.9B</td>
+<td class="num">1.22</td>
+<td class="num">244.2</td>
+<td class="num">32.2</td>
+<td class="num">-</td>
+<td class="num pos">+658.2%</td>
+<td class="num na">-</td>
+<td class="num">2,181.6</td>
+<td class="num neg">-2.0%</td>
+<td class="num neg">-2.7%</td>
+<td class="num neg">-0.7%</td>
+<td class="num neg">-1.4%</td>
+<td class="num pos">+133.6%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="40.0" y="18.4" width="7.0" height="5.6" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="70.0" y="21.8" width="7.0" height="2.2" fill="#c0392b"/><rect x="80.0" y="19.6" width="7.0" height="4.4" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="TRT" data-market="mai" data-new="0" data-np="127365.11" data-mcap="4558522425.6" data-eps="0.41" data-qoq="-21.8" data-yoy="271.4">
+<td><b>TRT</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>INDUS</td>
+<td class="num">4.6B</td>
+<td class="num">0.41</td>
+<td class="num">127.4</td>
+<td class="num">162.8</td>
+<td class="num">34.3</td>
+<td class="num neg">-21.8%</td>
+<td class="num pos">+271.4%</td>
+<td class="num">703.8</td>
+<td class="num neg">-3.3%</td>
+<td class="num pos">+7.2%</td>
+<td class="num neg">-3.3%</td>
+<td class="num pos">+13.8%</td>
+<td class="num pos">+325.3%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="20.0" y="16.0" width="7.0" height="8.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="8.0" width="7.0" height="16.0" fill="#27ae60"/><rect x="60.0" y="15.0" width="7.0" height="9.0" fill="#c0392b"/><rect x="70.0" y="12.0" width="7.0" height="12.0" fill="#27ae60"/><rect x="80.0" y="7.0" width="7.0" height="17.0" fill="#27ae60"/><rect x="90.0" y="12.0" width="7.0" height="12.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="TACC" data-market="mai" data-new="0" data-np="104304.0" data-mcap="4043200000.0" data-eps="0.17" data-qoq="4.6" data-yoy="31.8">
+<td><b>TACC</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>AGRO</td>
+<td class="num">4.0B</td>
+<td class="num">0.17</td>
+<td class="num">104.3</td>
+<td class="num">99.7</td>
+<td class="num">79.1</td>
+<td class="num pos">+4.6%</td>
+<td class="num pos">+31.8%</td>
+<td class="num">685.2</td>
+<td class="num pos">+3.1%</td>
+<td class="num pos">+3.1%</td>
+<td class="num pos">+3.9%</td>
+<td class="num pos">+6.4%</td>
+<td class="num pos">+29.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="20.7" width="7.0" height="3.3" fill="#95a5a6"/><rect x="10.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="60.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="70.0" y="20.7" width="7.0" height="3.3" fill="#c0392b"/><rect x="80.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SPVI" data-market="mai" data-new="0" data-np="52644.0" data-mcap="1544000000.0" data-eps="0.13" data-qoq="-2.9" data-yoy="148.8">
+<td><b>SPVI</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>TECH</td>
+<td class="num">1.5B</td>
+<td class="num">0.13</td>
+<td class="num">52.6</td>
+<td class="num">54.2</td>
+<td class="num">21.2</td>
+<td class="num neg">-2.9%</td>
+<td class="num pos">+148.8%</td>
+<td class="num">1,961.5</td>
+<td class="num pos">+7.2%</td>
+<td class="num pos">+10.3%</td>
+<td class="num pos">+12.9%</td>
+<td class="num pos">+18.4%</td>
+<td class="num pos">+78.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="21.6" width="7.0" height="2.4" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="21.6" width="7.0" height="2.4" fill="#27ae60"/><rect x="30.0" y="20.8" width="7.0" height="3.2" fill="#27ae60"/><rect x="40.0" y="18.4" width="7.0" height="5.6" fill="#27ae60"/><rect x="50.0" y="19.2" width="7.0" height="4.8" fill="#c0392b"/><rect x="60.0" y="16.0" width="7.0" height="8.0" fill="#27ae60"/><rect x="70.0" y="14.4" width="7.0" height="9.6" fill="#27ae60"/><rect x="80.0" y="14.4" width="7.0" height="9.6" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="KJL" data-market="mai" data-new="0" data-np="38378.69" data-mcap="1600784820.0" data-eps="0.17" data-qoq="49.5" data-yoy="-21.1">
+<td><b>KJL</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>INDUS</td>
+<td class="num">1.6B</td>
+<td class="num">0.17</td>
+<td class="num">38.4</td>
+<td class="num">25.7</td>
+<td class="num">48.7</td>
+<td class="num pos">+49.5%</td>
+<td class="num neg">-21.1%</td>
+<td class="num">336.3</td>
+<td class="num pos">+2.2%</td>
+<td class="num pos">+3.8%</td>
+<td class="num pos">+2.2%</td>
+<td class="num pos">+11.3%</td>
+<td class="num pos">+13.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="9.7" width="7.0" height="14.3" fill="#95a5a6"/><rect x="10.0" y="12.6" width="7.0" height="11.4" fill="#c0392b"/><rect x="20.0" y="12.6" width="7.0" height="11.4" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="50.0" y="6.9" width="7.0" height="17.1" fill="#27ae60"/><rect x="60.0" y="6.9" width="7.0" height="17.1" fill="#27ae60"/><rect x="70.0" y="15.4" width="7.0" height="8.6" fill="#c0392b"/><rect x="80.0" y="12.6" width="7.0" height="11.4" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="MMM" data-market="mai" data-new="0" data-np="37521.0" data-mcap="1059959833.56" data-eps="0.1" data-qoq="15.3" data-yoy="-1e+18">
+<td><b>MMM</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>PROPCON</td>
+<td class="num">1.1B</td>
+<td class="num">0.10</td>
+<td class="num">37.5</td>
+<td class="num">32.5</td>
+<td class="num">-</td>
+<td class="num pos">+15.3%</td>
+<td class="num na">-</td>
+<td class="num">240.8</td>
+<td class="num neg">-0.7%</td>
+<td class="num pos">+5.0%</td>
+<td class="num pos">+4.3%</td>
+<td class="num pos">+4.3%</td>
+<td class="num neg">-14.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="21.8" width="7.0" height="2.2" fill="#27ae60"/><rect x="50.0" y="6.2" width="7.0" height="17.8" fill="#27ae60"/><rect x="60.0" y="12.9" width="7.0" height="11.1" fill="#c0392b"/><rect x="70.0" y="8.4" width="7.0" height="15.6" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="6.2" width="7.0" height="17.8" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="MGT" data-market="mai" data-new="1" data-np="36888.0" data-mcap="764000000.0" data-eps="0.09" data-qoq="20.8" data-yoy="59.9">
+<td><b>MGT</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>INDUS</td>
+<td class="num">764M</td>
+<td class="num">0.09</td>
+<td class="num">36.9</td>
+<td class="num">30.5</td>
+<td class="num">23.1</td>
+<td class="num pos">+20.8%</td>
+<td class="num pos">+59.9%</td>
+<td class="num">354.5</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-1.0%</td>
+<td class="num neg">-1.0%</td>
+<td class="num pos">+5.5%</td>
+<td class="num pos">+17.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="70.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="80.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="90.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TQR" data-market="mai" data-new="0" data-np="29875.48" data-mcap="1380000000.0" data-eps="0.13" data-qoq="-18.6" data-yoy="48.4">
+<td><b>TQR</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>FINCIAL</td>
+<td class="num">1.4B</td>
+<td class="num">0.13</td>
+<td class="num">29.9</td>
+<td class="num">36.7</td>
+<td class="num">20.1</td>
+<td class="num neg">-18.6%</td>
+<td class="num pos">+48.4%</td>
+<td class="num">75.3</td>
+<td class="num pos">+5.3%</td>
+<td class="num pos">+4.3%</td>
+<td class="num pos">+8.1%</td>
+<td class="num pos">+7.1%</td>
+<td class="num pos">+16.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="19.6" width="7.0" height="4.4" fill="#27ae60"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="30.0" y="15.1" width="7.0" height="8.9" fill="#27ae60"/><rect x="40.0" y="15.1" width="7.0" height="8.9" fill="#27ae60"/><rect x="50.0" y="15.1" width="7.0" height="8.9" fill="#27ae60"/><rect x="60.0" y="15.1" width="7.0" height="8.9" fill="#27ae60"/><rect x="70.0" y="15.1" width="7.0" height="8.9" fill="#27ae60"/><rect x="80.0" y="17.3" width="7.0" height="6.7" fill="#c0392b"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="PDG" data-market="mai" data-new="0" data-np="22105.0" data-mcap="962279769.96" data-eps="0.07" data-qoq="24.1" data-yoy="24.8">
+<td><b>PDG</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>INDUS</td>
+<td class="num">962M</td>
+<td class="num">0.07</td>
+<td class="num">22.1</td>
+<td class="num">17.8</td>
+<td class="num">17.7</td>
+<td class="num pos">+24.1%</td>
+<td class="num pos">+24.8%</td>
+<td class="num">186.2</td>
+<td class="num pos">+1.2%</td>
+<td class="num pos">+1.9%</td>
+<td class="num pos">+2.5%</td>
+<td class="num pos">+2.5%</td>
+<td class="num pos">+10.2%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="50.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="PACO" data-market="mai" data-new="0" data-np="21429.0" data-mcap="1470000179.34" data-eps="0.02" data-qoq="-48.9" data-yoy="-33.2">
+<td><b>PACO</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>INDUS</td>
+<td class="num">1.5B</td>
+<td class="num">0.02</td>
+<td class="num">21.4</td>
+<td class="num">41.9</td>
+<td class="num">32.1</td>
+<td class="num neg">-48.9%</td>
+<td class="num neg">-33.2%</td>
+<td class="num">249.3</td>
+<td class="num neg">-0.7%</td>
+<td class="num pos">+0.7%</td>
+<td class="num pos">+0.7%</td>
+<td class="num pos">+5.0%</td>
+<td class="num pos">+13.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="20.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="60.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="MORE" data-market="mai" data-new="1" data-np="14247.0" data-mcap="358837422.05" data-eps="-1e+18" data-qoq="-394.1" data-yoy="-4136.0">
+<td><b>MORE</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>SERVICE</td>
+<td class="num">359M</td>
+<td class="num">-</td>
+<td class="num">14.2</td>
+<td class="num">-4.8</td>
+<td class="num">-0.4</td>
+<td class="num neg">-394.1%</td>
+<td class="num neg">-4136.0%</td>
+<td class="num">46.4</td>
+<td class="num neg">-16.7%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-16.7%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+25.0%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="AUCT" data-market="mai" data-new="1" data-np="9884.07" data-mcap="2431000000.0" data-eps="0.02" data-qoq="-71.6" data-yoy="-77.8">
+<td><b>AUCT</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>SERVICE</td>
+<td class="num">2.4B</td>
+<td class="num">0.02</td>
+<td class="num">9.9</td>
+<td class="num">34.8</td>
+<td class="num">44.5</td>
+<td class="num neg">-71.6%</td>
+<td class="num neg">-77.8%</td>
+<td class="num">180.0</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+0.9%</td>
+<td class="num neg">-1.3%</td>
+<td class="num pos">+1.8%</td>
+<td class="num neg">-21.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="6.9" width="7.0" height="17.1" fill="#95a5a6"/><rect x="10.0" y="12.6" width="7.0" height="11.4" fill="#c0392b"/><rect x="20.0" y="12.6" width="7.0" height="11.4" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="50.0" y="6.9" width="7.0" height="17.1" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="6.9" width="7.0" height="17.1" fill="#c0392b"/><rect x="80.0" y="12.6" width="7.0" height="11.4" fill="#c0392b"/><rect x="90.0" y="12.6" width="7.0" height="11.4" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="SMART" data-market="mai" data-new="1" data-np="4417.0" data-mcap="593692984.23" data-eps="-1e+18" data-qoq="25.1" data-yoy="124.6">
+<td><b>SMART</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PROPCON</td>
+<td class="num">594M</td>
+<td class="num">-</td>
+<td class="num">4.4</td>
+<td class="num">3.5</td>
+<td class="num">2.0</td>
+<td class="num pos">+25.1%</td>
+<td class="num pos">+124.6%</td>
+<td class="num">102.4</td>
+<td class="num neg">-1.7%</td>
+<td class="num neg">-1.7%</td>
+<td class="num pos">+3.6%</td>
+<td class="num pos">+5.6%</td>
+<td class="num pos">+18.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="50.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="60.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="TPLAS" data-market="mai" data-new="0" data-np="4336.0" data-mcap="321300000.0" data-eps="0.02" data-qoq="-56.1" data-yoy="650.2">
+<td><b>TPLAS</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>INDUS</td>
+<td class="num">321M</td>
+<td class="num">0.02</td>
+<td class="num">4.3</td>
+<td class="num">9.9</td>
+<td class="num">0.6</td>
+<td class="num neg">-56.1%</td>
+<td class="num pos">+650.2%</td>
+<td class="num">133.4</td>
+<td class="num neg">-2.5%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+7.2%</td>
+<td class="num pos">+36.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="19.0" width="7.0" height="5.0" fill="#95a5a6"/><rect x="10.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="20.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="50.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="60.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="70.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="READY" data-market="mai" data-new="1" data-np="3989.2" data-mcap="359999931.0" data-eps="0.03" data-qoq="-36.3" data-yoy="-54.3">
+<td><b>READY</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>TECH</td>
+<td class="num">360M</td>
+<td class="num">0.03</td>
+<td class="num">4.0</td>
+<td class="num">6.3</td>
+<td class="num">8.7</td>
+<td class="num neg">-36.3%</td>
+<td class="num neg">-54.3%</td>
+<td class="num">48.3</td>
+<td class="num neg">-0.7%</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-1.3%</td>
+<td class="num neg">-0.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="14.0" width="7.0" height="10.0" fill="#95a5a6"/><rect x="10.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="60.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="80.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="YONG" data-market="mai" data-new="1" data-np="1969.0" data-mcap="482800000.0" data-eps="-1e+18" data-qoq="-46.5" data-yoy="-181.5">
+<td><b>YONG</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PROPCON</td>
+<td class="num">483M</td>
+<td class="num">-</td>
+<td class="num">2.0</td>
+<td class="num">3.7</td>
+<td class="num">-2.4</td>
+<td class="num neg">-46.5%</td>
+<td class="num neg">-181.5%</td>
+<td class="num">213.3</td>
+<td class="num zero">+0.0%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+1.4%</td>
+<td class="num neg">-4.0%</td>
+<td class="num pos">+2.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="20.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="80.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="PANEL" data-market="mai" data-new="0" data-np="508.25" data-mcap="231800000.0" data-eps="-1e+18" data-qoq="-50.3" data-yoy="-88.5">
+<td><b>PANEL</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>PROPCON</td>
+<td class="num">232M</td>
+<td class="num">-</td>
+<td class="num">0.5</td>
+<td class="num">1.0</td>
+<td class="num">4.4</td>
+<td class="num neg">-50.3%</td>
+<td class="num neg">-88.5%</td>
+<td class="num">29.1</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+1.7%</td>
+<td class="num pos">+2.5%</td>
+<td class="num neg">-14.1%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="22.0" width="7.0" height="2.0" fill="#95a5a6"/><rect x="10.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="20.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="30.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="40.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="50.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="60.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="70.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="80.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="I2" data-market="mai" data-new="0" data-np="-263.0" data-mcap="327600000.0" data-eps="-1e+18" data-qoq="-104.2" data-yoy="-90.2">
+<td><b>I2</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>TECH</td>
+<td class="num">328M</td>
+<td class="num">-</td>
+<td class="num">-0.3</td>
+<td class="num">6.3</td>
+<td class="num">-2.7</td>
+<td class="num neg">-104.2%</td>
+<td class="num neg">-90.2%</td>
+<td class="num">196.1</td>
+<td class="num neg">-1.3%</td>
+<td class="num pos">+5.4%</td>
+<td class="num neg">-2.5%</td>
+<td class="num neg">-1.3%</td>
+<td class="num pos">+9.9%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="4.0" width="7.0" height="20.0" fill="#95a5a6"/><rect x="10.0" y="18.3" width="7.0" height="5.7" fill="#c0392b"/><rect x="20.0" y="15.4" width="7.0" height="8.6" fill="#27ae60"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="40.0" y="18.3" width="7.0" height="5.7" fill="#27ae60"/><rect x="50.0" y="15.4" width="7.0" height="8.6" fill="#27ae60"/><rect x="60.0" y="12.6" width="7.0" height="11.4" fill="#27ae60"/><rect x="70.0" y="12.6" width="7.0" height="11.4" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="6.9" width="7.0" height="17.1" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="COMAN" data-market="mai" data-new="1" data-np="-5383.0" data-mcap="82029754.38" data-eps="-0.03" data-qoq="17.1" data-yoy="-94.4">
+<td><b>COMAN</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>TECH</td>
+<td class="num">82M</td>
+<td class="num">-0.03</td>
+<td class="num">-5.4</td>
+<td class="num">-4.6</td>
+<td class="num">-96.5</td>
+<td class="num pos">+17.1%</td>
+<td class="num neg">-94.4%</td>
+<td class="num">51.8</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-2.0%</td>
+<td class="num neg">-3.9%</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+11.4%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="10.7" width="7.0" height="13.3" fill="#95a5a6"/><rect x="10.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="20.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="30.0" y="10.7" width="7.0" height="13.3" fill="#c0392b"/><rect x="40.0" y="10.7" width="7.0" height="13.3" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="70.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="80.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/><rect x="90.0" y="17.3" width="7.0" height="6.7" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TIGER" data-market="mai" data-new="1" data-np="-8161.2" data-mcap="230000000.0" data-eps="-0.02" data-qoq="-284.7" data-yoy="1347.6">
+<td><b>TIGER</b><br><span class="sub">mai</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>PROPCON</td>
+<td class="num">230M</td>
+<td class="num">-0.02</td>
+<td class="num">-8.2</td>
+<td class="num">4.4</td>
+<td class="num">-0.6</td>
+<td class="num neg">-284.7%</td>
+<td class="num pos">+1347.6%</td>
+<td class="num">165.7</td>
+<td class="num pos">+4.2%</td>
+<td class="num zero">+0.0%</td>
+<td class="num neg">-2.0%</td>
+<td class="num neg">-18.0%</td>
+<td class="num pos">+66.7%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="9.0" width="7.0" height="15.0" fill="#95a5a6"/><rect x="10.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="20.0" y="9.0" width="7.0" height="15.0" fill="#c0392b"/><rect x="30.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="40.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="50.0" y="9.0" width="7.0" height="15.0" fill="#27ae60"/><rect x="60.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="70.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="80.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="90.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr data-sym="TURTLE" data-market="mai" data-new="0" data-np="-93972.0" data-mcap="5913123343.92" data-eps="-0.06" data-qoq="-48.1" data-yoy="9.5">
+<td><b>TURTLE</b><br><span class="sub">mai</span></td>
+<td class="new-col"></td>
+<td>SERVICE</td>
+<td class="num">5.9B</td>
+<td class="num">-0.06</td>
+<td class="num">-94.0</td>
+<td class="num">-181.0</td>
+<td class="num">-85.8</td>
+<td class="num neg">-48.1%</td>
+<td class="num pos">+9.5%</td>
+<td class="num">196.7</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td class="num na">-</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="0" width="23.3" height="24" fill="#ddd"/><rect x="33.3" y="0" width="23.3" height="24" fill="#ddd"/><rect x="66.7" y="0" width="23.3" height="24" fill="#ddd"/><rect x="100.0" y="0" width="23.3" height="24" fill="#ddd"/><rect x="133.3" y="22.0" width="23.3" height="2.0" fill="#95a5a6"/><rect x="166.7" y="7.6" width="23.3" height="16.4" fill="#27ae60"/><rect x="200.0" y="0" width="23.3" height="24" fill="#ddd"/><rect x="233.3" y="4.0" width="23.3" height="20.0" fill="#95a5a6"/><rect x="266.7" y="0" width="23.3" height="24" fill="#ddd"/><rect x="300.0" y="0" width="23.3" height="24" fill="#ddd"/></svg></td>
+</tr>
+<tr class="total-row" data-sym="TOTAL" data-market="" data-new="0" data-np="9e18" data-mcap="-1" data-eps="-1e18">
+<td><b>รวมทุกหุ้น (108 ตัว)</b></td>
+<td class="new-col">-</td>
+<td>-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">113,117.8</td>
+<td class="num">85,958.1</td>
+<td class="num">108,647.7</td>
+<td class="num pos"><b>+31.6%</b></td>
+<td class="num pos"><b>+2.9%</b></td>
+<td class="num">1,305,109.3</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td>-</td>
+</tr></tbody>
+    </table>
+    </div>
+  </div>
+
+  <div id="t2" class="panel">
+    <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>Sector</th><th class="num">หุ้น</th><th class="num">มีกำไร (บวก)</th><th class="num">กำไรรวม (ลบ.)</th>
+        <th class="num">QoQ</th><th class="num">YoY</th>
+      </tr></thead>
+      <tbody><tr>
+<td><b>ENERG</b></td>
+<td class="num">9</td>
+<td class="num">8/9</td>
+<td class="num">53,063.3</td>
+<td class="num pos">+63.2%</td>
+<td class="num neg">-32.4%</td>
+</tr>
+<tr>
+<td><b>ICT</b></td>
+<td class="num">7</td>
+<td class="num">6/7</td>
+<td class="num">20,840.5</td>
+<td class="num neg">-2.2%</td>
+<td class="num pos">+55.3%</td>
+</tr>
+<tr>
+<td><b>PETRO</b></td>
+<td class="num">4</td>
+<td class="num">4/4</td>
+<td class="num">12,645.2</td>
+<td class="num pos">+261.0%</td>
+<td class="num neg">-442.8%</td>
+</tr>
+<tr>
+<td><b>ETRON</b></td>
+<td class="num">2</td>
+<td class="num">2/2</td>
+<td class="num">6,115.3</td>
+<td class="num neg">-32.7%</td>
+<td class="num pos">+33.4%</td>
+</tr>
+<tr>
+<td><b>COMM</b></td>
+<td class="num">5</td>
+<td class="num">5/5</td>
+<td class="num">5,321.9</td>
+<td class="num neg">-8.5%</td>
+<td class="num pos">+3.8%</td>
+</tr>
+<tr>
+<td><b>FOOD</b></td>
+<td class="num">7</td>
+<td class="num">7/7</td>
+<td class="num">2,673.2</td>
+<td class="num pos">+6.1%</td>
+<td class="num neg">-3.0%</td>
+</tr>
+<tr>
+<td><b>TRANS</b></td>
+<td class="num">5</td>
+<td class="num">5/5</td>
+<td class="num">2,639.4</td>
+<td class="num pos">+37.6%</td>
+<td class="num pos">+26.4%</td>
+</tr>
+<tr>
+<td><b>PKG</b></td>
+<td class="num">3</td>
+<td class="num">3/3</td>
+<td class="num">2,490.1</td>
+<td class="num pos">+46.4%</td>
+<td class="num pos">+119.0%</td>
+</tr>
+<tr>
+<td><b>CONMAT</b></td>
+<td class="num">2</td>
+<td class="num">2/2</td>
+<td class="num">1,473.6</td>
+<td class="num neg">-9.1%</td>
+<td class="num pos">+24.0%</td>
+</tr>
+<tr>
+<td><b>PROP</b></td>
+<td class="num">8</td>
+<td class="num">6/8</td>
+<td class="num">1,388.5</td>
+<td class="num neg">-22.1%</td>
+<td class="num pos">+20.3%</td>
+</tr>
+<tr>
+<td><b>INSUR</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">1,244.5</td>
+<td class="num pos">+10.2%</td>
+<td class="num pos">+30.2%</td>
+</tr>
+<tr>
+<td><b>FIN</b></td>
+<td class="num">4</td>
+<td class="num">4/4</td>
+<td class="num">1,045.6</td>
+<td class="num neg">-10.7%</td>
+<td class="num pos">+7.9%</td>
+</tr>
+<tr>
+<td><b>AGRI</b></td>
+<td class="num">3</td>
+<td class="num">3/3</td>
+<td class="num">600.6</td>
+<td class="num pos">+24.9%</td>
+<td class="num neg">-22.7%</td>
+</tr>
+<tr>
+<td><b>AUTO</b></td>
+<td class="num">3</td>
+<td class="num">3/3</td>
+<td class="num">482.2</td>
+<td class="num neg">-22.2%</td>
+<td class="num neg">-1.5%</td>
+</tr>
+<tr>
+<td><b>AGRO</b></td>
+<td class="num">2</td>
+<td class="num">2/2</td>
+<td class="num">348.5</td>
+<td class="num pos">+164.3%</td>
+<td class="num pos">+31.8%</td>
+</tr>
+<tr>
+<td><b>INDUS</b></td>
+<td class="num">6</td>
+<td class="num">6/6</td>
+<td class="num">250.5</td>
+<td class="num neg">-13.2%</td>
+<td class="num pos">+60.2%</td>
+</tr>
+<tr>
+<td><b>STEEL AN</b></td>
+<td class="num">5</td>
+<td class="num">2/5</td>
+<td class="num">219.3</td>
+<td class="num pos">+740.6%</td>
+<td class="num neg">-195.9%</td>
+</tr>
+<tr>
+<td><b>MEDIA</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">168.9</td>
+<td class="num pos">+11.4%</td>
+<td class="num pos">+1310.8%</td>
+</tr>
+<tr>
+<td><b>IMM</b></td>
+<td class="num">2</td>
+<td class="num">2/2</td>
+<td class="num">71.2</td>
+<td class="num pos">+34.2%</td>
+<td class="num pos">+1310.5%</td>
+</tr>
+<tr>
+<td><b>HELTH</b></td>
+<td class="num">2</td>
+<td class="num">2/2</td>
+<td class="num">67.5</td>
+<td class="num neg">-16.5%</td>
+<td class="num neg">-8.0%</td>
+</tr>
+<tr>
+<td><b>TECH</b></td>
+<td class="num">4</td>
+<td class="num">2/4</td>
+<td class="num">51.0</td>
+<td class="num neg">-18.0%</td>
+<td class="num neg">-173.6%</td>
+</tr>
+<tr>
+<td><b>PROF</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">47.0</td>
+<td class="num neg">-12.9%</td>
+<td class="num neg">-17.8%</td>
+</tr>
+<tr>
+<td><b>PROPCON</b></td>
+<td class="num">5</td>
+<td class="num">4/5</td>
+<td class="num">36.3</td>
+<td class="num neg">-19.8%</td>
+<td class="num neg">-137.3%</td>
+</tr>
+<tr>
+<td><b>FINCIAL</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">29.9</td>
+<td class="num neg">-18.6%</td>
+<td class="num pos">+48.4%</td>
+</tr>
+<tr>
+<td><b>TOURISM</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">13.0</td>
+<td class="num neg">-44.4%</td>
+<td class="num pos">+28.6%</td>
+</tr>
+<tr>
+<td><b>CONST</b></td>
+<td class="num">2</td>
+<td class="num">1/2</td>
+<td class="num">-6.8</td>
+<td class="num neg">-90.4%</td>
+<td class="num neg">-80.4%</td>
+</tr>
+<tr>
+<td><b>HOME</b></td>
+<td class="num">1</td>
+<td class="num">0/1</td>
+<td class="num">-49.3</td>
+<td class="num pos">+57.1%</td>
+<td class="num pos">+999.0%</td>
+</tr>
+<tr>
+<td><b>SERVICE</b></td>
+<td class="num">3</td>
+<td class="num">2/3</td>
+<td class="num">-69.8</td>
+<td class="num neg">-53.8%</td>
+<td class="num pos">+67.4%</td>
+</tr>
+<tr>
+<td><b>PERSON</b></td>
+<td class="num">2</td>
+<td class="num">0/2</td>
+<td class="num">-83.3</td>
+<td class="num neg">-204.2%</td>
+<td class="num neg">-251.4%</td>
+</tr></tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="note">📌 <b>หมายเหตุ:</b> กำไร/รายได้หน่วย '000 บาท → แสดงเป็นล้านบาท · QoQ = เทียบ 1Q2026, YoY = เทียบ 2Q2025 · % เปลี่ยนราคาคำนวณจากราคาปิด (DuckDB) · Sparkline = ราคาปิด 10 วันทำการล่าสุด (แท่งสุดท้ายสีแดง = ล่าสุด) · หุ้นที่ยังไม่รายงานงบจะไม่แสดงในตาราง</div>
+  <div class="foot">สร้างโดย Strategy Team · UOB Kay Hian (Thailand) Research · อัปเดตล่าสุด 2026-08-07</div>
+</div>
+<script>
+function showTab(id) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function sortTable(mode) {
+  const tbody = document.querySelector('#mainTable tbody');
+  const all = [...tbody.querySelectorAll('tr')];
+  const rows = all.filter(r => r.getAttribute('data-sym') !== 'TOTAL');
+  const total = all.filter(r => r.getAttribute('data-sym') === 'TOTAL');
+  const get = (r, k) => r.getAttribute('data-' + k);
+  rows.sort((a, b) => {
+    if (mode === 'sym') {
+      const am = get(a,'market'), bm = get(b,'market');
+      if (am !== bm) return am.localeCompare(bm);
+      return get(a,'sym').localeCompare(get(b,'sym'));
+    }
+    if (mode === 'new') {
+      const an = get(a,'new'), bn = get(b,'new');
+      if (an !== bn) return bn.localeCompare(an);   // new (1) first
+      const am = get(a,'market'), bm = get(b,'market');
+      if (am !== bm) return am.localeCompare(bm);
+      return get(a,'sym').localeCompare(get(b,'sym'));  // then A-Z
+    }
+    const av = parseFloat(get(a, mode)), bv = parseFloat(get(b, mode));
+    if (mode === 'mcap' && av < 0) return 1;
+    if (mode === 'mcap' && bv < 0) return -1;
+    return bv - av;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+  total.forEach(r => tbody.appendChild(r));
+}
+</script>
+</body>
+</html>
